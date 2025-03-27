@@ -1,0 +1,2647 @@
+[
+    {
+        "id": 6029001,
+        "nom": "MANDELIEU-LA-NAPOULE (CANNES)",
+        "lieuDit": "CANNES MANDELIEU",
+        "bassin": "Y553",
+        "dateDebut": "1949-03-01 00:00:00",
+        "dateFin": "",
+        "typesPoste": [
+            {
+                "type": 0,
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            }
+        ],
+        "parametres": [
+            {
+                "nom": "AMPLITUDE ENTRE TN ET TX QUOTIDIEN",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "BASE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-31 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "2001-02-03 00:00:00",
+                "dateFin": "2001-02-07 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "2001-11-19 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "2011-05-25 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "BASE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-31 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "2001-02-04 00:00:00",
+                "dateFin": "2001-02-07 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "2001-11-19 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "2007-06-11 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "2011-05-25 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "BASE DE LA 3EME COUCHE NUAGEUSE",
+                "dateDebut": "1973-01-02 00:00:00",
+                "dateFin": "2000-01-29 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA 3EME COUCHE NUAGEUSE",
+                "dateDebut": "2001-02-06 00:00:00",
+                "dateFin": "2001-02-07 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA 3EME COUCHE NUAGEUSE",
+                "dateDebut": "2007-06-11 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA 3EME COUCHE NUAGEUSE",
+                "dateDebut": "2011-05-27 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "BASE DE LA 4EME COUCHE NUAGEUSE",
+                "dateDebut": "1973-01-15 00:00:00",
+                "dateFin": "1992-12-25 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA 4EME COUCHE NUAGEUSE",
+                "dateDebut": "1994-06-09 00:00:00",
+                "dateFin": "2000-01-24 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA 4EME COUCHE NUAGEUSE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": "2008-06-12 23:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1992-02-06 00:00:00",
+                "dateFin": "1992-02-13 00:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1992-11-07 00:00:00",
+                "dateFin": "1992-11-07 00:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1993-03-18 00:00:00",
+                "dateFin": "1993-03-18 00:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1994-03-12 00:00:00",
+                "dateFin": "1994-03-12 00:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1995-05-28 00:00:00",
+                "dateFin": "1995-05-28 00:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1997-03-18 00:00:00",
+                "dateFin": "1997-03-18 00:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1997-06-05 00:00:00",
+                "dateFin": "1997-06-05 00:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1997-10-23 00:00:00",
+                "dateFin": "1997-10-23 00:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1999-01-11 00:00:00",
+                "dateFin": "1999-05-13 00:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1999-09-19 00:00:00",
+                "dateFin": "1999-09-19 00:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "2008-04-11 00:00:00",
+                "dateFin": "2008-04-11 00:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "2012-11-10 00:00:00",
+                "dateFin": "2013-07-13 00:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "2013-10-04 00:00:00",
+                "dateFin": "2014-07-07 00:00:00"
+            },
+            {
+                "nom": "BASE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "2014-09-20 00:00:00",
+                "dateFin": "2015-04-27 00:00:00"
+            },
+            {
+                "nom": "CODE SYNOP NUAGES BAS HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": "2000-01-31 23:00:00"
+            },
+            {
+                "nom": "CODE SYNOP NUAGES BAS HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "CODE SYNOP NUAGES BAS HORAIRE",
+                "dateDebut": "2011-05-20 00:00:00",
+                "dateFin": "2011-05-20 23:00:00"
+            },
+            {
+                "nom": "CODE SYNOP NUAGES ELEVE HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": "2000-01-31 23:00:00"
+            },
+            {
+                "nom": "CODE SYNOP NUAGES ELEVE HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "CODE SYNOP NUAGES ELEVE HORAIRE",
+                "dateDebut": "2011-05-20 00:00:00",
+                "dateFin": "2011-05-20 23:00:00"
+            },
+            {
+                "nom": "CODE SYNOP NUAGES MOYEN HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": "2000-01-31 23:00:00"
+            },
+            {
+                "nom": "CODE SYNOP NUAGES MOYEN HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "CODE SYNOP NUAGES MOYEN HORAIRE",
+                "dateDebut": "2011-05-20 00:00:00",
+                "dateFin": "2011-05-20 23:00:00"
+            },
+            {
+                "nom": "CODE TEMPS PASSE W1 HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": "2000-01-29 23:00:00"
+            },
+            {
+                "nom": "CODE TEMPS PASSE W1 HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "CODE TEMPS PASSE W1 HORAIRE",
+                "dateDebut": "2009-10-13 00:00:00",
+                "dateFin": "2009-10-14 23:00:00"
+            },
+            {
+                "nom": "CODE TEMPS PASSE W2 HORAIRE",
+                "dateDebut": "1982-01-01 00:00:00",
+                "dateFin": "2000-01-29 23:00:00"
+            },
+            {
+                "nom": "CODE TEMPS PASSE W2 HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "CODE TEMPS PRESENT HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": "2000-01-31 23:00:00"
+            },
+            {
+                "nom": "CODE TEMPS PRESENT HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DE PRECIPITATIONS EN 6 MN",
+                "dateDebut": "2005-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DE RAYONNEMENT GLOBAL DECADAIRE",
+                "dateDebut": "1995-01-01 00:00:00",
+                "dateFin": "1995-01-10 00:00:00"
+            },
+            {
+                "nom": "CUMUL DE RAYONNEMENT GLOBAL DECADAIRE",
+                "dateDebut": "1995-03-11 00:00:00",
+                "dateFin": "2017-12-30 00:00:00"
+            },
+            {
+                "nom": "CUMUL DECADAIRE DES TM>0 AVEC TM NON ECRETEE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DECADAIRE DES TM>10, TM ECRETEE A 30 POUR TX, 10 POUR TN",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DECADAIRE DES TM>6 AVEC TM ECRETEE A 30 POUR TX",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DECADAIRE DES TM>8 AVEC TM ECRETEE A 30 POUR TX",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE CHAUFFAGISTE",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE METEO",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DES DUREES D'INSOLATION",
+                "dateDebut": "1995-01-01 00:00:00",
+                "dateFin": "2018-01-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES HAUTEURS DE PRECIPITATIONS",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DIRECTION DU VENT A 10 M HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DIRECTION DU VENT MAXI INSTANTANE",
+                "dateDebut": "1949-06-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DIRECTION DU VENT MAXI INSTANTANE HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DIRECTION DU VENT MOYEN SUR 10 MN MAXIMAL HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "DIRECTION DU VENT MOYEN SUR 10 MN MAXIMAL HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DIRECTION VENT MAXI INSTANTANE QUOTIDIEN",
+                "dateDebut": "1949-06-06 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DIRECTION VENT QUOTIDIEN MAXI MOYENNE SUR 10 MIN",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2004-10-15 00:00:00"
+            },
+            {
+                "nom": "DIRECTION VENT QUOTIDIEN MAXI MOYENNE SUR 10 MIN",
+                "dateDebut": "2007-05-31 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DUREE AVEC VISIBILITE<200 M",
+                "dateDebut": "1998-10-01 00:00:00",
+                "dateFin": "1998-10-13 23:00:00"
+            },
+            {
+                "nom": "DUREE AVEC VISIBILITE<200 M",
+                "dateDebut": "2015-06-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DUREE D'INSOLATION HORAIRE",
+                "dateDebut": "1995-01-01 00:00:00",
+                "dateFin": "2018-01-04 23:00:00"
+            },
+            {
+                "nom": "DUREE D'INSOLATION HORAIRE EN TEMPS SOLAIRE VRAI",
+                "dateDebut": "2010-09-21 00:00:00",
+                "dateFin": "2018-01-04 23:00:00"
+            },
+            {
+                "nom": "DUREE D'INSOLATION QUOTIDIENNE",
+                "dateDebut": "1995-01-01 00:00:00",
+                "dateFin": "2018-01-03 00:00:00"
+            },
+            {
+                "nom": "DUREE DE GEL HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "DUREE DE GEL HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DUREE DE GEL QUOTIDIENNE",
+                "dateDebut": "1992-01-01 00:00:00",
+                "dateFin": "2001-10-18 00:00:00"
+            },
+            {
+                "nom": "DUREE DE GEL QUOTIDIENNE",
+                "dateDebut": "2007-05-30 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DUREE DES PRECIPITATIONS HORAIRE",
+                "dateDebut": "2011-05-25 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DUREE DES PRECIPITATIONS QUOTIDIENNES",
+                "dateDebut": "2007-08-10 00:00:00",
+                "dateFin": "2007-10-13 00:00:00"
+            },
+            {
+                "nom": "DUREE DES PRECIPITATIONS QUOTIDIENNES",
+                "dateDebut": "2008-05-08 00:00:00",
+                "dateFin": "2008-06-06 00:00:00"
+            },
+            {
+                "nom": "DUREE DES PRECIPITATIONS QUOTIDIENNES",
+                "dateDebut": "2011-05-26 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DUREE HUMIDITE <= 40% QUOTIDIENNE",
+                "dateDebut": "1982-01-03 00:00:00",
+                "dateFin": "1985-12-31 00:00:00"
+            },
+            {
+                "nom": "DUREE HUMIDITE <= 40% QUOTIDIENNE",
+                "dateDebut": "1986-05-23 00:00:00",
+                "dateFin": "1986-12-30 00:00:00"
+            },
+            {
+                "nom": "DUREE HUMIDITE <= 40% QUOTIDIENNE",
+                "dateDebut": "1988-11-06 00:00:00",
+                "dateFin": "2001-10-26 00:00:00"
+            },
+            {
+                "nom": "DUREE HUMIDITE <= 40% QUOTIDIENNE",
+                "dateDebut": "2007-05-30 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DUREE HUMIDITE >= 80% QUOTIDIENNE",
+                "dateDebut": "1982-01-06 00:00:00",
+                "dateFin": "1985-12-28 00:00:00"
+            },
+            {
+                "nom": "DUREE HUMIDITE >= 80% QUOTIDIENNE",
+                "dateDebut": "1986-05-30 00:00:00",
+                "dateFin": "1986-12-28 00:00:00"
+            },
+            {
+                "nom": "DUREE HUMIDITE >= 80% QUOTIDIENNE",
+                "dateDebut": "1988-11-06 00:00:00",
+                "dateFin": "2001-10-26 00:00:00"
+            },
+            {
+                "nom": "DUREE HUMIDITE >= 80% QUOTIDIENNE",
+                "dateDebut": "2007-05-30 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DUREE HUMIDITE<=40% HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DUREE HUMIDITE>=80% HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DUREE TOTALE D'INSOLATION DECADAIRE",
+                "dateDebut": "1995-01-01 00:00:00",
+                "dateFin": "1995-01-10 00:00:00"
+            },
+            {
+                "nom": "DUREE TOTALE D'INSOLATION DECADAIRE",
+                "dateDebut": "1995-03-11 00:00:00",
+                "dateFin": "2017-12-30 00:00:00"
+            },
+            {
+                "nom": "ECOULEMENT D'EAU DECADAIRE POUR UNE RESERVE UTILE DE 100 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-20 00:00:00"
+            },
+            {
+                "nom": "ECOULEMENT D'EAU DECADAIRE POUR UNE RESERVE UTILE DE 150 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-20 00:00:00"
+            },
+            {
+                "nom": "ECOULEMENT D'EAU DECADAIRE POUR UNE RESERVE UTILE DE 200 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-20 00:00:00"
+            },
+            {
+                "nom": "ECOULEMENT D'EAU DECADAIRE POUR UNE RESERVE UTILE DE 50 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-20 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE FRAICHE SUR 6 HEURES",
+                "dateDebut": "1985-01-05 00:00:00",
+                "dateFin": "1985-01-09 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE FRAICHE SUR 6 HEURES",
+                "dateDebut": "1987-01-16 00:00:00",
+                "dateFin": "1987-01-16 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE FRAICHE SUR 6 HEURES",
+                "dateDebut": "1991-02-06 00:00:00",
+                "dateFin": "1991-02-07 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE FRAICHE SUR 6 HEURES",
+                "dateDebut": "1997-01-04 00:00:00",
+                "dateFin": "1997-01-04 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE FRAICHE SUR 6 HEURES",
+                "dateDebut": "1999-06-07 00:00:00",
+                "dateFin": "1999-06-07 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "1956-02-21 00:00:00",
+                "dateFin": "1956-02-22 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "1983-02-14 00:00:00",
+                "dateFin": "1983-02-14 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "1985-01-05 00:00:00",
+                "dateFin": "1987-01-16 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "1989-05-05 00:00:00",
+                "dateFin": "1991-02-14 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "1997-01-04 00:00:00",
+                "dateFin": "1997-01-04 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2009-07-17 00:00:00",
+                "dateFin": "2009-07-17 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE RELEVEE A 0600 FU",
+                "dateDebut": "1956-02-21 00:00:00",
+                "dateFin": "1956-02-22 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE RELEVEE A 0600 FU",
+                "dateDebut": "1983-02-14 00:00:00",
+                "dateFin": "1983-02-14 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE RELEVEE A 0600 FU",
+                "dateDebut": "1985-01-06 00:00:00",
+                "dateFin": "1987-01-16 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE RELEVEE A 0600 FU",
+                "dateDebut": "1991-02-07 00:00:00",
+                "dateFin": "1991-02-14 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE RELEVEE A 0600 FU",
+                "dateDebut": "1997-01-04 00:00:00",
+                "dateFin": "1997-01-04 00:00:00"
+            },
+            {
+                "nom": "ETAT DECADAIRE DES RESERVES POUR UNE RESERVE UTILE DE 100 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-10 00:00:00"
+            },
+            {
+                "nom": "ETAT DECADAIRE DES RESERVES POUR UNE RESERVE UTILE DE 150 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-10 00:00:00"
+            },
+            {
+                "nom": "ETAT DECADAIRE DES RESERVES POUR UNE RESERVE UTILE DE 200 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-10 00:00:00"
+            },
+            {
+                "nom": "ETAT DECADAIRE DES RESERVES POUR UNE RESERVE UTILE DE 50 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-10 00:00:00"
+            },
+            {
+                "nom": "ETAT DECADAIRE DU RESERVOIR PROFOND POUR UNE RESERVE UTILE DE 100 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-10 00:00:00"
+            },
+            {
+                "nom": "ETAT DECADAIRE DU RESERVOIR PROFOND POUR UNE RESERVE UTILE DE 150 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-10 00:00:00"
+            },
+            {
+                "nom": "ETAT DECADAIRE DU RESERVOIR PROFOND POUR UNE RESERVE UTILE DE 200 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-10 00:00:00"
+            },
+            {
+                "nom": "ETAT DECADAIRE DU RESERVOIR PROFOND POUR UNE RESERVE UTILE DE 50 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-10 00:00:00"
+            },
+            {
+                "nom": "ETAT DECADAIRE DU RESERVOIR SUPERIEUR POUR UNE RESERVE UTILE DE 100 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-10 00:00:00"
+            },
+            {
+                "nom": "ETAT DECADAIRE DU RESERVOIR SUPERIEUR POUR UNE RESERVE UTILE DE 150 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-10 00:00:00"
+            },
+            {
+                "nom": "ETAT DECADAIRE DU RESERVOIR SUPERIEUR POUR UNE RESERVE UTILE DE 200 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-10 00:00:00"
+            },
+            {
+                "nom": "ETAT DECADAIRE DU RESERVOIR SUPERIEUR POUR UNE RESERVE UTILE DE 50 MM",
+                "dateDebut": "1995-12-21 00:00:00",
+                "dateFin": "2018-03-10 00:00:00"
+            },
+            {
+                "nom": "ETAT DU SOL AVEC NEIGE HORAIRE",
+                "dateDebut": "1983-02-14 00:00:00",
+                "dateFin": "1983-02-14 23:00:00"
+            },
+            {
+                "nom": "ETAT DU SOL AVEC NEIGE HORAIRE",
+                "dateDebut": "1985-01-05 00:00:00",
+                "dateFin": "1985-01-13 23:00:00"
+            },
+            {
+                "nom": "ETAT DU SOL AVEC NEIGE HORAIRE",
+                "dateDebut": "1986-02-10 00:00:00",
+                "dateFin": "1986-02-12 23:00:00"
+            },
+            {
+                "nom": "ETAT DU SOL AVEC NEIGE HORAIRE",
+                "dateDebut": "1987-01-16 00:00:00",
+                "dateFin": "1987-01-16 23:00:00"
+            },
+            {
+                "nom": "ETAT DU SOL AVEC NEIGE HORAIRE",
+                "dateDebut": "1989-05-05 00:00:00",
+                "dateFin": "1989-06-06 23:00:00"
+            },
+            {
+                "nom": "ETAT DU SOL AVEC NEIGE HORAIRE",
+                "dateDebut": "1990-03-05 00:00:00",
+                "dateFin": "1990-03-05 23:00:00"
+            },
+            {
+                "nom": "ETAT DU SOL AVEC NEIGE HORAIRE",
+                "dateDebut": "1990-06-09 00:00:00",
+                "dateFin": "1990-06-18 23:00:00"
+            },
+            {
+                "nom": "ETAT DU SOL AVEC NEIGE HORAIRE",
+                "dateDebut": "1991-02-06 00:00:00",
+                "dateFin": "1991-02-14 23:00:00"
+            },
+            {
+                "nom": "ETAT DU SOL AVEC NEIGE HORAIRE",
+                "dateDebut": "1997-01-04 00:00:00",
+                "dateFin": "1997-01-04 23:00:00"
+            },
+            {
+                "nom": "ETAT DU SOL SANS NEIGE HORAIRE",
+                "dateDebut": "1954-10-31 00:00:00",
+                "dateFin": "1987-05-31 23:00:00"
+            },
+            {
+                "nom": "ETAT DU SOL SANS NEIGE HORAIRE",
+                "dateDebut": "1987-10-01 00:00:00",
+                "dateFin": "1995-06-29 23:00:00"
+            },
+            {
+                "nom": "ETAT DU SOL SANS NEIGE HORAIRE",
+                "dateDebut": "1996-01-11 00:00:00",
+                "dateFin": "2000-01-31 23:00:00"
+            },
+            {
+                "nom": "ETP CALCULEE AU POINT DE GRILLE LE PLUS PROCHE",
+                "dateDebut": "2005-04-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "ETP PENMAN DECADAIRE",
+                "dateDebut": "1995-01-01 00:00:00",
+                "dateFin": "1995-01-10 00:00:00"
+            },
+            {
+                "nom": "ETP PENMAN DECADAIRE",
+                "dateDebut": "1995-03-11 00:00:00",
+                "dateFin": "2017-12-30 00:00:00"
+            },
+            {
+                "nom": "EVAPO-TRANSPIRATION MONTEITH QUOTIDIENNE",
+                "dateDebut": "1995-01-01 00:00:00",
+                "dateFin": "2018-01-03 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR DE PRECIPITATIONS HORAIRE",
+                "dateDebut": "1993-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HAUTEUR DE PRECIPITATIONS QUOTIDIENNE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HAUTEUR TOTALE DECADAIRE DES PRECIPITATIONS",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DE L'HUMIDITE RELATIVE MAXIMALE HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "HEURE DE L'HUMIDITE RELATIVE MAXIMALE HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DE L'HUMIDITE RELATIVE MINIMALE HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "HEURE DE L'HUMIDITE RELATIVE MINIMALE HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DU MAXI D'HUMIDITE QUOTIDIENNE",
+                "dateDebut": "1984-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DU MINI D'HUMIDITE QUOTIDIENNE",
+                "dateDebut": "1984-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DU TN SOUS ABRI HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "HEURE DU TN SOUS ABRI HORAIRE",
+                "dateDebut": "2004-10-16 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DU TN SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "1984-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DU TX SOUS ABRI HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "HEURE DU TX SOUS ABRI HORAIRE",
+                "dateDebut": "2004-10-16 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DU TX SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "1984-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DU VENT MAX INSTANTANE HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "HEURE DU VENT MAX INSTANTANE HORAIRE",
+                "dateDebut": "2004-10-16 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DU VENT MAX INSTANTANE HORAIRE SUR 3 SECONDES",
+                "dateDebut": "2011-05-25 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DU VENT MOYEN SUR 10 MN MAXI HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "HEURE DU VENT MOYEN SUR 10 MN MAXI HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE VENT MAXI INSTANTANE QUOTIDIEN",
+                "dateDebut": "1984-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE VENT MAXI INSTANTANE QUOTIDIEN SUR 3 SECONDES",
+                "dateDebut": "2011-05-26 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE VENT QUOTIDIEN MAXI MOYENNE SUR 10 MIN",
+                "dateDebut": "1984-01-01 00:00:00",
+                "dateFin": "2004-10-15 00:00:00"
+            },
+            {
+                "nom": "HEURE VENT QUOTIDIEN MAXI MOYENNE SUR 10 MIN",
+                "dateDebut": "2007-05-31 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HUMIDITE RELATIVE HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HUMIDITE RELATIVE MAXI HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "HUMIDITE RELATIVE MAXI HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HUMIDITE RELATIVE MAXI MENSUELLE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HUMIDITE RELATIVE MAXIMALE QUOTIDIENNE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HUMIDITE RELATIVE MINI HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "HUMIDITE RELATIVE MINI HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HUMIDITE RELATIVE MINI MENSUELLE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HUMIDITE RELATIVE MINIMALE QUOTIDIENNE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HUMIDITE RELATIVE MOYENNE",
+                "dateDebut": "1949-03-22 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MAX DES FXY QUOTIDIEN",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2004-10-01 00:00:00"
+            },
+            {
+                "nom": "MAX DES FXY QUOTIDIEN",
+                "dateDebut": "2007-05-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MAXIMUM DES TN DU MOIS",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "1956-02-02 00:00:00",
+                "dateFin": "1956-02-22 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "1958-03-11 00:00:00",
+                "dateFin": "1958-03-11 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "1960-01-13 00:00:00",
+                "dateFin": "1960-01-15 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "1963-01-13 00:00:00",
+                "dateFin": "1965-02-18 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "1967-01-06 00:00:00",
+                "dateFin": "1971-03-07 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "1979-01-04 00:00:00",
+                "dateFin": "1979-01-04 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "1980-10-10 00:00:00",
+                "dateFin": "1992-12-31 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "1997-01-04 00:00:00",
+                "dateFin": "1997-01-04 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2009-07-17 00:00:00",
+                "dateFin": "2009-07-17 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": "1961-12-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1962-03-01 00:00:00",
+                "dateFin": "1962-03-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1962-10-01 00:00:00",
+                "dateFin": "1962-10-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1963-03-01 00:00:00",
+                "dateFin": "1963-03-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1964-02-01 00:00:00",
+                "dateFin": "1964-04-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1964-09-01 00:00:00",
+                "dateFin": "1964-10-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1965-01-01 00:00:00",
+                "dateFin": "1965-01-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1965-09-01 00:00:00",
+                "dateFin": "1965-09-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1966-03-01 00:00:00",
+                "dateFin": "1966-03-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1966-07-01 00:00:00",
+                "dateFin": "1966-08-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1967-01-01 00:00:00",
+                "dateFin": "1967-03-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1968-01-01 00:00:00",
+                "dateFin": "1968-01-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1968-04-01 00:00:00",
+                "dateFin": "1968-04-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1968-07-01 00:00:00",
+                "dateFin": "1968-07-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1968-11-01 00:00:00",
+                "dateFin": "1969-01-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1969-07-01 00:00:00",
+                "dateFin": "1969-08-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1969-12-01 00:00:00",
+                "dateFin": "1970-03-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1970-06-01 00:00:00",
+                "dateFin": "1970-07-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1970-10-01 00:00:00",
+                "dateFin": "1970-10-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1971-01-01 00:00:00",
+                "dateFin": "1971-03-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1971-06-01 00:00:00",
+                "dateFin": "1971-09-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1972-02-01 00:00:00",
+                "dateFin": "1972-05-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1972-08-01 00:00:00",
+                "dateFin": "1972-08-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1972-11-01 00:00:00",
+                "dateFin": "1973-01-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1974-05-01 00:00:00",
+                "dateFin": "1974-05-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1974-09-01 00:00:00",
+                "dateFin": "1974-09-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1975-07-01 00:00:00",
+                "dateFin": "1976-01-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1976-08-01 00:00:00",
+                "dateFin": "1978-02-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1978-05-01 00:00:00",
+                "dateFin": "1978-09-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1978-12-01 00:00:00",
+                "dateFin": "1979-02-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1979-05-01 00:00:00",
+                "dateFin": "1979-08-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1979-11-01 00:00:00",
+                "dateFin": "1980-01-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1981-02-01 00:00:00",
+                "dateFin": "1981-02-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1981-05-01 00:00:00",
+                "dateFin": "1981-07-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1981-10-01 00:00:00",
+                "dateFin": "1981-11-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1982-02-01 00:00:00",
+                "dateFin": "1982-11-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1983-02-01 00:00:00",
+                "dateFin": "1983-02-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1983-05-01 00:00:00",
+                "dateFin": "1983-07-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1983-10-01 00:00:00",
+                "dateFin": "1983-10-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1984-01-01 00:00:00",
+                "dateFin": "1984-01-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1985-08-01 00:00:00",
+                "dateFin": "1985-09-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1985-12-01 00:00:00",
+                "dateFin": "1985-12-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1986-03-01 00:00:00",
+                "dateFin": "1986-03-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1986-06-01 00:00:00",
+                "dateFin": "1986-12-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1988-01-01 00:00:00",
+                "dateFin": "1988-01-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1988-11-01 00:00:00",
+                "dateFin": "1988-11-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1989-03-01 00:00:00",
+                "dateFin": "1989-04-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1989-08-01 00:00:00",
+                "dateFin": "1989-11-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1990-02-01 00:00:00",
+                "dateFin": "1990-06-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1990-11-01 00:00:00",
+                "dateFin": "1991-05-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1991-08-01 00:00:00",
+                "dateFin": "1991-08-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1992-04-01 00:00:00",
+                "dateFin": "1992-08-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1992-12-01 00:00:00",
+                "dateFin": "1993-06-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1993-10-01 00:00:00",
+                "dateFin": "1994-12-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1995-09-01 00:00:00",
+                "dateFin": "1995-09-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1995-12-01 00:00:00",
+                "dateFin": "1996-03-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1996-11-01 00:00:00",
+                "dateFin": "1996-11-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1997-08-01 00:00:00",
+                "dateFin": "1997-12-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1998-05-01 00:00:00",
+                "dateFin": "1998-05-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "1999-04-01 00:00:00",
+                "dateFin": "1999-04-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "2000-03-01 00:00:00",
+                "dateFin": "2000-05-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "2001-10-01 00:00:00",
+                "dateFin": "2002-09-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "2003-02-01 00:00:00",
+                "dateFin": "2003-02-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "2004-09-01 00:00:00",
+                "dateFin": "2005-09-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM ABSOLU DES PMERM",
+                "dateDebut": "2006-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MINIMUM DE LA PRESSION MER",
+                "dateDebut": "2007-05-30 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MINIMUM DES TX DU MOIS",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DECADAIRE DE LA FORCE DU VENT",
+                "dateDebut": "1949-06-11 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DECADAIRE DE LA TEMPERATURE MAXI",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DECADAIRE DE LA TEMPERATURE MINI",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DECADAIRE DE LA TENSION DE VAPEUR",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": "1950-06-30 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DECADAIRE DE LA TENSION DE VAPEUR",
+                "dateDebut": "1951-12-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DES (TN+TX)/2",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DES PRESSIONS MER",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": "1961-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1962-03-01 00:00:00",
+                "dateFin": "1962-03-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1962-10-01 00:00:00",
+                "dateFin": "1962-10-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1963-03-01 00:00:00",
+                "dateFin": "1963-03-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1964-02-01 00:00:00",
+                "dateFin": "1964-04-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1964-09-01 00:00:00",
+                "dateFin": "1964-10-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1965-01-01 00:00:00",
+                "dateFin": "1965-01-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1965-09-01 00:00:00",
+                "dateFin": "1965-09-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1966-03-01 00:00:00",
+                "dateFin": "1966-03-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1966-07-01 00:00:00",
+                "dateFin": "1966-08-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1967-01-01 00:00:00",
+                "dateFin": "1967-03-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1968-01-01 00:00:00",
+                "dateFin": "1968-01-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1968-04-01 00:00:00",
+                "dateFin": "1968-04-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1968-07-01 00:00:00",
+                "dateFin": "1968-07-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1968-11-01 00:00:00",
+                "dateFin": "1969-01-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1969-07-01 00:00:00",
+                "dateFin": "1969-08-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1969-12-01 00:00:00",
+                "dateFin": "1970-03-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1970-06-01 00:00:00",
+                "dateFin": "1970-07-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1970-10-01 00:00:00",
+                "dateFin": "1970-10-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1971-01-01 00:00:00",
+                "dateFin": "1971-03-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1971-06-01 00:00:00",
+                "dateFin": "1971-09-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1972-02-01 00:00:00",
+                "dateFin": "1972-05-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1972-08-01 00:00:00",
+                "dateFin": "1972-08-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1972-11-01 00:00:00",
+                "dateFin": "1973-01-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1974-05-01 00:00:00",
+                "dateFin": "1974-05-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1974-09-01 00:00:00",
+                "dateFin": "1974-09-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1975-07-01 00:00:00",
+                "dateFin": "1976-01-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1976-08-01 00:00:00",
+                "dateFin": "1978-02-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1978-05-01 00:00:00",
+                "dateFin": "1978-09-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1978-12-01 00:00:00",
+                "dateFin": "1979-02-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1979-05-01 00:00:00",
+                "dateFin": "1979-08-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1979-11-01 00:00:00",
+                "dateFin": "1980-01-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1981-02-01 00:00:00",
+                "dateFin": "1981-02-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1981-05-01 00:00:00",
+                "dateFin": "1981-07-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1981-10-01 00:00:00",
+                "dateFin": "1981-11-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1982-02-01 00:00:00",
+                "dateFin": "1982-11-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1983-02-01 00:00:00",
+                "dateFin": "1983-02-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1983-05-01 00:00:00",
+                "dateFin": "1983-07-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1983-10-01 00:00:00",
+                "dateFin": "1983-10-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1984-01-01 00:00:00",
+                "dateFin": "1984-01-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1985-08-01 00:00:00",
+                "dateFin": "1985-09-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1985-12-01 00:00:00",
+                "dateFin": "1985-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1986-03-01 00:00:00",
+                "dateFin": "1986-03-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1986-06-01 00:00:00",
+                "dateFin": "1986-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1988-01-01 00:00:00",
+                "dateFin": "1988-01-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1988-11-01 00:00:00",
+                "dateFin": "1988-11-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1989-03-01 00:00:00",
+                "dateFin": "1989-04-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1989-08-01 00:00:00",
+                "dateFin": "1989-11-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1990-02-01 00:00:00",
+                "dateFin": "1990-06-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1990-11-01 00:00:00",
+                "dateFin": "1991-05-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1991-08-01 00:00:00",
+                "dateFin": "1991-08-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1992-04-01 00:00:00",
+                "dateFin": "1992-08-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1992-12-01 00:00:00",
+                "dateFin": "1993-06-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1993-10-01 00:00:00",
+                "dateFin": "1994-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1995-09-01 00:00:00",
+                "dateFin": "1995-09-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1995-12-01 00:00:00",
+                "dateFin": "1996-03-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1996-11-01 00:00:00",
+                "dateFin": "1996-11-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1997-08-01 00:00:00",
+                "dateFin": "1997-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1998-05-01 00:00:00",
+                "dateFin": "1998-05-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "1999-04-01 00:00:00",
+                "dateFin": "1999-04-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "2000-03-01 00:00:00",
+                "dateFin": "2000-05-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "2001-10-01 00:00:00",
+                "dateFin": "2002-09-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "2003-02-01 00:00:00",
+                "dateFin": "2003-02-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "2004-09-01 00:00:00",
+                "dateFin": "2005-09-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "2006-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DES TN DU MOIS",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DES TX DU MOIS",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DES VITESSES DU VENT A 10M",
+                "dateDebut": "1949-06-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DES VITESSES DU VENT A 10M QUOTIDIENNE",
+                "dateDebut": "1949-06-07 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NBRE DE JOURS PRESENT AVEC BROUILLARD",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "2003-05-01 00:00:00"
+            },
+            {
+                "nom": "NBRE DE JOURS PRESENT AVEC BROUILLARD",
+                "dateDebut": "2011-05-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NBRE DE JOURS PRESENTS AVEC ORAGE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "2003-05-01 00:00:00"
+            },
+            {
+                "nom": "NBRE DE JOURS PRESENTS AVEC ORAGE",
+                "dateDebut": "2011-05-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NEBUL. DE LA COUCHE NUAG. PRINCIPALE LA PLUS BASSE HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": "2000-01-29 23:00:00"
+            },
+            {
+                "nom": "NEBUL. DE LA COUCHE NUAG. PRINCIPALE LA PLUS BASSE HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "NEBUL. DE LA COUCHE NUAG. PRINCIPALE LA PLUS BASSE HORAIRE",
+                "dateDebut": "2011-05-20 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NEBULOSITE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-31 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "2001-02-03 00:00:00",
+                "dateFin": "2001-02-07 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "2001-11-19 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "2011-05-25 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NEBULOSITE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-31 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "2001-02-04 00:00:00",
+                "dateFin": "2001-02-07 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "2001-11-19 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "2007-06-11 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "2011-05-25 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NEBULOSITE DE LA 3EME COUCHE NUAGEUSE",
+                "dateDebut": "1973-01-02 00:00:00",
+                "dateFin": "2000-01-29 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA 3EME COUCHE NUAGEUSE",
+                "dateDebut": "2001-02-06 00:00:00",
+                "dateFin": "2001-02-07 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA 3EME COUCHE NUAGEUSE",
+                "dateDebut": "2007-06-11 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA 3EME COUCHE NUAGEUSE",
+                "dateDebut": "2011-05-27 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NEBULOSITE DE LA 4EME COUCHE NUAGEUSE",
+                "dateDebut": "1973-01-15 00:00:00",
+                "dateFin": "1992-12-25 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA 4EME COUCHE NUAGEUSE",
+                "dateDebut": "1994-06-09 00:00:00",
+                "dateFin": "2000-01-24 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA 4EME COUCHE NUAGEUSE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": "2008-06-12 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1992-02-06 00:00:00",
+                "dateFin": "1992-02-13 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1992-11-07 00:00:00",
+                "dateFin": "1992-11-07 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1993-03-18 00:00:00",
+                "dateFin": "1993-03-18 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1994-03-12 00:00:00",
+                "dateFin": "1994-03-12 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1995-05-28 00:00:00",
+                "dateFin": "1995-05-28 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1997-03-18 00:00:00",
+                "dateFin": "1997-03-18 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1997-06-05 00:00:00",
+                "dateFin": "1997-06-05 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1997-10-23 00:00:00",
+                "dateFin": "1997-10-23 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1999-01-11 00:00:00",
+                "dateFin": "1999-05-13 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "1999-09-19 00:00:00",
+                "dateFin": "1999-09-19 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "2008-04-11 00:00:00",
+                "dateFin": "2008-04-11 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "2012-11-10 00:00:00",
+                "dateFin": "2013-07-13 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "2013-10-04 00:00:00",
+                "dateFin": "2014-07-07 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE DE LA COUCHE NUAGEUSE LA PLUS BASSE",
+                "dateDebut": "2014-09-20 00:00:00",
+                "dateFin": "2015-04-27 00:00:00"
+            },
+            {
+                "nom": "NEBULOSITE TOTALE HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": "2000-01-31 23:00:00"
+            },
+            {
+                "nom": "NEBULOSITE TOTALE HORAIRE",
+                "dateDebut": "2015-06-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC FXI3S>=10M/S",
+                "dateDebut": "2011-05-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC FXI3S>=16M/S",
+                "dateDebut": "2011-05-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC FXI3S>=28M/S",
+                "dateDebut": "2011-05-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC FXI>=10 M/S",
+                "dateDebut": "1949-06-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC FXI>=16 M/S",
+                "dateDebut": "1949-06-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC FXI>=28 M/S",
+                "dateDebut": "1949-06-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC FXY>=10 M/S",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2004-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC FXY>=10 M/S",
+                "dateDebut": "2007-05-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC FXY>=15 M/S",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2004-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC FXY>=15 M/S",
+                "dateDebut": "2007-05-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC FXY>=8 M/S",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2004-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC FXY>=8 M/S",
+                "dateDebut": "2007-05-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GELEE",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "2002-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "2001-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "2005-02-01 00:00:00",
+                "dateFin": "2005-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "2010-02-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=1 MM",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=10 MM",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=100 MM",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=30 MM",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=5 MM",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=50 MM",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC SIGMA<=20%",
+                "dateDebut": "1995-01-01 00:00:00",
+                "dateFin": "2018-01-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC SIGMA=0%",
+                "dateDebut": "1995-01-01 00:00:00",
+                "dateFin": "2018-01-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC SIGMA>=80%",
+                "dateDebut": "1995-01-01 00:00:00",
+                "dateFin": "2018-01-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC SOL COUVERT DE NEIGE",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TM>=+24\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+10\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+15\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+20\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-10\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-5\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+20\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+25\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=0\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=20\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=27\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=25\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=30\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=32\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=35\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "OCCURRENCE D'ORAGE QUOTIDIENNE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "2003-05-31 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE D'ORAGE QUOTIDIENNE",
+                "dateDebut": "2011-05-26 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "OCCURRENCE DE BROUILLARD QUOTIDIENNE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "2003-05-31 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE BROUILLARD QUOTIDIENNE",
+                "dateDebut": "2011-05-26 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "OCCURRENCE DE BRUME QUOTIDIENNE",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-30 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE BRUME QUOTIDIENNE",
+                "dateDebut": "2011-05-26 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "OCCURRENCE DE FUMEE QUOTIDIENNE",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-30 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE FUMEE QUOTIDIENNE",
+                "dateDebut": "2011-05-26 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "OCCURRENCE DE GELEE BLANCHE QUOTIDIENNE",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-30 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE GELEE BLANCHE QUOTIDIENNE",
+                "dateDebut": "2011-05-26 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "OCCURRENCE DE GRELE QUOTIDIENNE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "2003-05-31 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE GRESIL QUOTIDIENNE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "2000-01-30 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "2001-02-28 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "2005-02-20 00:00:00",
+                "dateFin": "2005-02-27 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "2010-02-11 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "OCCURRENCE DE ROSEE QUOTIDIENNE",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-30 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE ROSEE QUOTIDIENNE",
+                "dateDebut": "2015-04-24 00:00:00",
+                "dateFin": "2015-04-24 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE SOL COUVERT DE NEIGE",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-30 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE VERGLAS",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-30 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE ECLAIR QUOTIDIENNE",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-30 00:00:00"
+            },
+            {
+                "nom": "PRECIPITATION MAXIMALE EN 24H",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "PRESSION MER HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "PRESSION MER MINIMUM QUOTIDIENNE",
+                "dateDebut": "2007-06-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "PRESSION MER MOYENNE QUOTIDIENNE",
+                "dateDebut": "1949-03-22 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "PRESSION STATION HORAIRE",
+                "dateDebut": "1982-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "QUANTITE DE PRECIPITATIONS LORS DE L'EPISODE PLUVIEUX",
+                "dateDebut": "1989-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1949-04-26 00:00:00",
+                "dateFin": "1949-04-26 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1950-05-03 00:00:00",
+                "dateFin": "1950-05-03 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1950-09-15 00:00:00",
+                "dateFin": "1950-09-15 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1952-05-05 00:00:00",
+                "dateFin": "1952-05-05 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1955-11-02 00:00:00",
+                "dateFin": "1955-11-02 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1957-04-03 00:00:00",
+                "dateFin": "1957-04-03 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1957-09-10 00:00:00",
+                "dateFin": "1957-09-10 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1958-12-19 00:00:00",
+                "dateFin": "1958-12-19 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1959-12-10 00:00:00",
+                "dateFin": "1959-12-10 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1960-12-30 00:00:00",
+                "dateFin": "1960-12-31 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1963-06-08 00:00:00",
+                "dateFin": "1963-06-10 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1963-10-25 00:00:00",
+                "dateFin": "1963-10-27 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1966-11-11 00:00:00",
+                "dateFin": "1966-11-12 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1967-07-22 00:00:00",
+                "dateFin": "1967-07-22 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1969-06-21 00:00:00",
+                "dateFin": "1969-06-21 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1971-08-25 00:00:00",
+                "dateFin": "1971-08-26 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1972-01-08 00:00:00",
+                "dateFin": "1972-01-08 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1972-09-29 00:00:00",
+                "dateFin": "1972-12-27 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1979-09-23 00:00:00",
+                "dateFin": "1979-09-23 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1983-02-13 00:00:00",
+                "dateFin": "1983-02-13 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1987-12-31 00:00:00",
+                "dateFin": "1987-12-31 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1989-11-16 00:00:00",
+                "dateFin": "1989-11-19 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1991-06-18 00:00:00",
+                "dateFin": "1991-06-18 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1991-09-27 00:00:00",
+                "dateFin": "1991-09-27 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1992-04-07 00:00:00",
+                "dateFin": "1992-04-07 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1992-08-29 00:00:00",
+                "dateFin": "1992-08-29 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1998-12-10 00:00:00",
+                "dateFin": "1999-01-07 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1999-09-28 00:00:00",
+                "dateFin": "1999-09-28 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2000-01-11 00:00:00",
+                "dateFin": "2000-02-15 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2002-05-18 00:00:00",
+                "dateFin": "2002-05-21 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2002-12-02 00:00:00",
+                "dateFin": "2002-12-02 00:00:00"
+            },
+            {
+                "nom": "RAPPORT INSOLATION QUOTIDIEN",
+                "dateDebut": "1995-01-01 00:00:00",
+                "dateFin": "2018-01-03 00:00:00"
+            },
+            {
+                "nom": "SOMME DES ETP PENMAN",
+                "dateDebut": "1995-04-01 00:00:00",
+                "dateFin": "2017-12-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 0\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 10\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 6\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 8\u00b0C",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE DU POINT DE ROSEE HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE MAXIMALE SOUS ABRI HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE MAXIMALE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE MINIMALE A +10CM HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "TEMPERATURE MINIMALE A +10CM HORAIRE",
+                "dateDebut": "2004-10-16 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE MINIMALE A +10CM QUOTIDIENNE",
+                "dateDebut": "1982-01-01 00:00:00",
+                "dateFin": "1987-05-31 00:00:00"
+            },
+            {
+                "nom": "TEMPERATURE MINIMALE A +10CM QUOTIDIENNE",
+                "dateDebut": "1987-10-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE MINIMALE SOUS ABRI HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE MINIMALE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE MOYENNE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "1949-03-22 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE SOUS ABRI HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TENSION DE VAPEUR HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TENSION DE VAPEUR MOYENNE",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": "1950-07-01 00:00:00"
+            },
+            {
+                "nom": "TENSION DE VAPEUR MOYENNE",
+                "dateDebut": "1951-11-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TENSION DE VAPEUR MOYENNE QUOTIDIENNE",
+                "dateDebut": "1949-03-22 00:00:00",
+                "dateFin": "1950-07-05 00:00:00"
+            },
+            {
+                "nom": "TENSION DE VAPEUR MOYENNE QUOTIDIENNE",
+                "dateDebut": "1951-11-10 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TN MINI DU MOIS",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TX MAXI DU MOIS",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TYPE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-31 23:00:00"
+            },
+            {
+                "nom": "TYPE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "2001-02-03 00:00:00",
+                "dateFin": "2001-02-07 23:00:00"
+            },
+            {
+                "nom": "TYPE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "2001-11-19 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "TYPE DE LA 1ERE COUCHE NUAGEUSE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "TYPE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2000-01-31 23:00:00"
+            },
+            {
+                "nom": "TYPE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "2001-02-04 00:00:00",
+                "dateFin": "2001-02-07 23:00:00"
+            },
+            {
+                "nom": "TYPE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "2001-11-19 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "TYPE DE LA 2EME COUCHE NUAGEUSE",
+                "dateDebut": "2007-06-11 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "TYPE DE LA 3EME COUCHE NUAGEUSE",
+                "dateDebut": "1973-01-02 00:00:00",
+                "dateFin": "2000-01-29 23:00:00"
+            },
+            {
+                "nom": "TYPE DE LA 3EME COUCHE NUAGEUSE",
+                "dateDebut": "2001-02-06 00:00:00",
+                "dateFin": "2001-02-07 23:00:00"
+            },
+            {
+                "nom": "TYPE DE LA 3EME COUCHE NUAGEUSE",
+                "dateDebut": "2007-06-11 00:00:00",
+                "dateFin": "2008-06-17 23:00:00"
+            },
+            {
+                "nom": "TYPE DE LA 4EME COUCHE NUAGEUSE",
+                "dateDebut": "1973-01-15 00:00:00",
+                "dateFin": "1992-12-25 23:00:00"
+            },
+            {
+                "nom": "TYPE DE LA 4EME COUCHE NUAGEUSE",
+                "dateDebut": "1994-06-09 00:00:00",
+                "dateFin": "2000-01-24 23:00:00"
+            },
+            {
+                "nom": "TYPE DE LA 4EME COUCHE NUAGEUSE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": "2008-06-12 23:00:00"
+            },
+            {
+                "nom": "VISIBILITE HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": "2000-01-31 23:00:00"
+            },
+            {
+                "nom": "VISIBILITE HORAIRE",
+                "dateDebut": "2015-06-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "VISIBILITE VERS LA MER",
+                "dateDebut": "1986-06-10 00:00:00",
+                "dateFin": "1986-06-10 23:00:00"
+            },
+            {
+                "nom": "VISIBILITE VERS LA MER",
+                "dateDebut": "1995-08-13 00:00:00",
+                "dateFin": "1995-08-13 23:00:00"
+            },
+            {
+                "nom": "VITESSE DU VENT HORAIRE",
+                "dateDebut": "1949-03-21 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "VITESSE DU VENT INSTANTANE MAXI HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "VITESSE DU VENT INSTANTANE MAXI HORAIRE SUR 3 SECONDES",
+                "dateDebut": "2011-05-25 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "VITESSE DU VENT MOYEN SUR 10 MN MAXI HORAIRE",
+                "dateDebut": "1994-06-14 00:00:00",
+                "dateFin": "2001-11-20 23:00:00"
+            },
+            {
+                "nom": "VITESSE DU VENT MOYEN SUR 10 MN MAXI HORAIRE",
+                "dateDebut": "2007-05-29 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "VITESSE VENT MAXI INSTANTANE",
+                "dateDebut": "1949-06-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "VITESSE VENT MAXI INSTANTANE QUOTIDIENNE",
+                "dateDebut": "1949-06-06 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "VITESSE VENT MAXI INSTANTANE QUOTIDIENNE SUR 3 SECONDES",
+                "dateDebut": "2011-05-26 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "VITESSE VENT MAXI INSTANTANE SUR 3 SECONDES",
+                "dateDebut": "2011-05-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "VITESSE VENT QUOTIDIEN MAXI MOYENNE SUR 10 MIN",
+                "dateDebut": "1973-01-01 00:00:00",
+                "dateFin": "2004-10-15 00:00:00"
+            },
+            {
+                "nom": "VITESSE VENT QUOTIDIEN MAXI MOYENNE SUR 10 MIN",
+                "dateDebut": "2007-05-31 00:00:00",
+                "dateFin": ""
+            }
+        ],
+        "producteurs": [
+            {
+                "nom": "METEO-FRANCE",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": ""
+            }
+        ],
+        "positions": [
+            {
+                "altitude": 2,
+                "latitude": 43.545833333333334,
+                "longitude": 6.954,
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": "2012-10-18 00:00:00"
+            },
+            {
+                "altitude": 2,
+                "latitude": 43.5565,
+                "longitude": 6.9505,
+                "dateDebut": "2012-10-19 00:00:00",
+                "dateFin": ""
+            }
+        ]
+    }
+]

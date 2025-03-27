@@ -76,7 +76,21 @@ class Client(object):
 
 
 def get_rqt(request_url: str, format_result: str = "json", error: str = "raise") -> Any:
+    """Base function to request API
+
+    Args:
+        request_url (str): _description_
+        format_result (str, optional): either ('pd' for pandas.DataFrame, 'json', 'csv' or 'raw'). Defaults to "json".
+        error (str, optional): _description_. Defaults to "raise".
+
+    Raises:
+        ValueError: _description_
+
+    Returns:
+        Any: _description_
+    """
     from json import loads
+    from io import StringIO
 
     client = Client()
     client.session.headers.update({"Accept": "application/json"})
@@ -102,8 +116,14 @@ def get_rqt(request_url: str, format_result: str = "json", error: str = "raise")
         return df
     elif format_result == "json":
         return loads(response.content)
-    else:
+    elif format_result == "csv":
+        return pd.read_csv(StringIO(response.content.decode()), sep=";", decimal=",")
+    elif format_result == "raw":
         return response
+    else:
+        raise ValueError(
+            f"format_result: {format_result} must be either pd, json, csv or raw"
+        )
 
 
 @cache
@@ -141,14 +161,25 @@ def get_all_ref(list_dep: list[str] = list_dep, use_cache: bool = True) -> pd.Da
     if (path.exists(cache_file) is True) and (use_cache is True):
         logger.info("Using cached data for ref.")
         df_ref_geo = pd.read_csv(cache_file)
-        return df_ref_geo
 
-    df_list = []
+        if list_dep[-1] in [str(i) for i in df_ref_geo.dep.unique()]:
+            return df_ref_geo
+        else:
+            list_dep = [i for i in list_dep if i not in df_ref_geo.dep.unique()]
+            logger.info(f"update list_dep: {list_dep}")
+
+    df_list: list = []
     for i in tqdm(list_dep):
-        df_list.append(get_ref(dep=i, prm="temperature"))
+        df_ref_geo = get_ref(dep=i, prm="temperature")
+        df_ref_geo["dep"] = i
+        if i == list_dep[0]:
+            df_ref_geo.to_csv(cache_file, index=False)
+        else:
+            df_ref_geo.to_csv(cache_file, index=False, header=False, mode="a")
+        df_list.append(df_ref_geo)
+        sleep(2)
 
-    df_ref_geo = pd.concat(df_list)
-    df_ref_geo.to_csv(cache_file, index=False)
+    df_ref_geo = pd.concat(df_list).reset_index(drop=True)
 
     logger.debug("end get all ref")
 
@@ -205,6 +236,8 @@ def get_weather(
     point: Optional[tuple[float, float]] = None,
     id: Optional[str] = None,
     name: Optional[str] = None,
+    df_ref_geo: Optional[pd.DataFrame] = None,
+    dest_dir: Optional[str] = "data",
 ):
     """To fetch weather data per date and position.
 
@@ -217,12 +250,20 @@ def get_weather(
     Raises:
         NotImplementedError: _description_
     """
+    from os import makedirs, path
+    from json import dumps
+    # from pathlib import Path
+
     assert not all([point is None, id is None, name is None]), (
         "1 parameter point, id or name must be given"
     )
 
-    # get all stations
-    df_ref_geo = get_all_ref(list_dep=list_dep[:10])
+    if dest_dir is not None:
+        makedirs(dest_dir, exist_ok=True)
+
+    if df_ref_geo is None:
+        # get all stations
+        df_ref_geo = get_all_ref(list_dep=list_dep)  # , use_cache=False 106 références
 
     # find the closest
     if id or name:
@@ -233,28 +274,64 @@ def get_weather(
             ref=df_ref_geo[["lat", "lon"]].to_numpy(dtype=(np.float64, np.float64)),
         )
 
+    # mat = get_dist(
+    #     vec=np.asarray([point], dtype=(np.float64, np.float64)),
+    #     ref=df_ref_geo[["lat", "lon"]].to_numpy(dtype=(np.float64, np.float64)),
+    # )
+
+    # df_ref_geo.iloc[idx]
+    # df_ref_geo[["lat", "lon"]].apply(
+    #     lambda x: np.abs(x["lat"] - point[0] + x["lon"] - point[1]), axis=1
+    # ).sort_values()
+    # df_ref_geo[["lat", "lon"]].iloc[0].lat
+
+    # df_ref_geo["l1_dist"] = df_ref_geo[["lat", "lon"]].apply(
+    #     lambda x: np.abs(x["lat"] - point[0] + x["lon"] - point[1]), axis=1
+    # )
+    # df_ref_geo.sort_values(by="l1_dist")
+    # df_ref_geo["l2_dist"] = df_ref_geo[["lat", "lon"]].apply(
+    #     lambda x: np.sqrt((x["lat"] - point[0]) ** 2 + (x["lon"] - point[1]) ** 2),
+    #     axis=1,
+    # )
+    # df_ref_geo.sort_values(by="l2_dist")
+    # df_ref_geo["hvs_dist"] = df_ref_geo[["lat", "lon"]].apply(
+    #     lambda x: hvs(x["lat"], point[0], x["lon"], point[1]), axis=1
+    # )
+    # df_ref_geo.sort_values(by="hvs_dist")
+
     # closest station
     # station_id = "02035001"
     station_id = df_ref_geo.iloc[idx][["id"]].values[0][0]
     station_id = f"{station_id:0>8}"  # padding avec des 0 pour être sur 8 chars
 
+    # metadonnées des variables disponibles pour la station
+    if dest_dir is not None:
+        url_meta = f"https://public-api.meteofrance.fr/public/DPClim/v1/information-station?id-station={station_id}"
+        df_meta = get_rqt(url_meta, error="warn")
+        with open(path.join(dest_dir, f"meta_{station_id}.json"), "w") as f:
+            f.write(dumps(df_meta))
+
     # get weather data from closest station
     # url_point_weather = """https://public-api.meteofrance.fr/public/DPClim/v1/commande-station/quotidienne?id-station=02035001&date-deb-periode=2025-01-01T00%3A00%3A00Z&date-fin-periode=2025-01-10T00%3A00%3A00Z"""
     url_point_weather = f"""https://public-api.meteofrance.fr/public/DPClim/v1/commande-station/quotidienne?id-station={station_id}&date-deb-periode={dates[0]}&date-fin-periode={dates[1]}"""
     logger.info(f"Use url: {url_point_weather}")
-    id_rqt = get_rqt(url_point_weather, error="warn")
+    id_rqt = get_rqt(url_point_weather, format_result="json", error="warn")
 
     # results
     id_cmde = id_rqt["elaboreProduitAvecDemandeResponse"]["return"]
-    # url_rqt = "https://public-api.meteofrance.fr/public/DPClim/v1/commande/fichier?id-cmde=2025001387957"
     url_rqt = f"https://public-api.meteofrance.fr/public/DPClim/v1/commande/fichier?id-cmde={id_cmde}"
-    # df = get_rqt(url_rqt, pd_result=True)
-    doc = get_rqt(request_url=url_rqt, error="warn")
 
-    return doc
+    doc = get_rqt(request_url=url_rqt, error="warn", format_result="csv")
+
+    return doc, station_id
 
 
 if __name__ == "__main__":
+    from itertools import pairwise
+    from time import sleep
+    from tqdm import tqdm
+    from os import makedirs, path
+
     # on veut
     # donner un site/coord/... + temporalité et récupérer les infos requises
     logger = logging.getLogger("meteofr")
@@ -273,7 +350,8 @@ if __name__ == "__main__":
 
     logger.info("Howdy !")
 
-    test_point = (45.932050, 2.000847)
+    # test_point = (45.932050, 2.000847)
+    test_point = (47.218102, -1.552800)
 
     td = pd.Timestamp("today", tz="Europe/Paris").normalize().tz_convert("UTC")
     start = td - pd.Timedelta("1d")
@@ -283,15 +361,26 @@ if __name__ == "__main__":
     # dates = [start.strftime(time_fmt), td.strftime(time_fmt)]
     # get_weather(dates=dates, point=test_point)
 
-    dates = pd.date_range(start=td - pd.Timedelta("30d"), end=td)
-    from itertools import pairwise
+    dates = pd.date_range(start=td - pd.Timedelta("30d"), end=td, freq="10d")
+
+    df_ref_geo = get_all_ref(list_dep=list_dep)  # , use_cache=False
 
     res = []
-    for i, j in pairwise(dates):
-        res.append(
-            get_weather(
-                dates=[i.strftime(time_fmt), j.strftime(time_fmt)], point=test_point
-            )
+    for i, j in tqdm(pairwise(dates)):
+        doc, station_id = get_weather(
+            dates=[i.strftime(time_fmt), j.strftime(time_fmt)],
+            point=test_point,
+            df_ref_geo=df_ref_geo,
         )
+        res.append(doc)
+        sleep(2)
+
+    dest_dir = "data"
+    makedirs(dest_dir, exist_ok=True)
+    df = pd.concat(res)
+
+    df.to_csv(path.join(dest_dir, f"df_res_{station_id}.csv"), index=False)
 
     ""
+
+    # TODO : se baser sur station la plus proche AVEC données publique (ou encore d'actualité...)
