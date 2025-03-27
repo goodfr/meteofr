@@ -1,10 +1,10 @@
 import numpy as np
 import pandas as pd
 import requests
-import numba # type; ignore
+import numba  # type: ignore
 from functools import cache
 import logging
-from typing import Any
+from typing import Any, Optional
 
 # ref: https://portail-api.meteofrance.fr/web/fr/api/test/a5935def-80ae-4e7e-83bc-3ef622f0438d/fe8c79d6-dcae-46f7-9e1f-6d5a8be4c3b8
 
@@ -75,7 +75,7 @@ class Client(object):
         self.session.headers.update({"Authorization": "Bearer %s" % token})
 
 
-def get_rqt(request_url: str, format_result: str = "json") -> Any:
+def get_rqt(request_url: str, format_result: str = "json", error: str = "raise") -> Any:
     from json import loads
 
     client = Client()
@@ -87,10 +87,15 @@ def get_rqt(request_url: str, format_result: str = "json") -> Any:
 
     if response.status_code >= 200 and response.status_code < 300:
         pass
-    else:
+    elif error == "raise":
         raise ValueError(
             f"response.status_code: {response.status_code}\n{response.url}\n{response.text}"
         )
+    else:
+        logger.warning(
+            f"response.status_code: {response.status_code}\n{response.url}\n{response.text}"
+        )
+        return
 
     if format_result == "pd":
         df: pd.DataFrame = pd.json_normalize(loads(response.content))
@@ -113,30 +118,37 @@ def get_ref(dep: str, prm: str) -> pd.DataFrame:
         pd.DataFrame: result dataframe
     """
 
-    logger.debug(f"begin get ref: {dep}, {prm}")
+    # logger.debug(f"begin get ref: {dep}, {prm}")
     request_url = (
         f"{url_api}/liste-stations/quotidienne?id-departement={dep}&parametre={prm}"
     )
 
-    return get_rqt(request_url=request_url, pd_result=True)
+    return get_rqt(request_url=request_url, format_result="pd")
 
 
-def get_all_ref(list_dep: list[str] = list_dep) -> pd.DataFrame:
+# @cache
+# def get_all_ref(*list_dep: str) -> pd.DataFrame: ## cache nécessite des args bytable (non list)
+def get_all_ref(list_dep: list[str] = list_dep, use_cache: bool = True) -> pd.DataFrame:
     from pathlib import Path
     from os import makedirs, path
     from tqdm import tqdm
 
     logger.debug("begin get all ref")
     dir_cache = Path.home().joinpath(".meteofr")
-
+    cache_file = path.join(dir_cache, "ref.csv")
     makedirs(dir_cache, exist_ok=True)
+
+    if (path.exists(cache_file) is True) and (use_cache is True):
+        logger.info("Using cached data for ref.")
+        df_ref_geo = pd.read_csv(cache_file)
+        return df_ref_geo
 
     df_list = []
     for i in tqdm(list_dep):
         df_list.append(get_ref(dep=i, prm="temperature"))
 
     df_ref_geo = pd.concat(df_list)
-    df_ref_geo.to_csv(path.join(dir_cache, "ref.csv"))
+    df_ref_geo.to_csv(cache_file, index=False)
 
     logger.debug("end get all ref")
 
@@ -188,7 +200,23 @@ def get_closest_point(
     return mat.argmin(axis=1), mat.min(axis=1)
 
 
-def get_weather(point=None, id=None, name=None):
+def get_weather(
+    dates: list[str],
+    point: Optional[tuple[float, float]] = None,
+    id: Optional[str] = None,
+    name: Optional[str] = None,
+):
+    """To fetch weather data per date and position.
+
+    Args:
+        dates (list[str, str]): _description_
+        point (_type_, optional): _description_. Defaults to None.
+        id (_type_, optional): _description_. Defaults to None.
+        name (_type_, optional): _description_. Defaults to None.
+
+    Raises:
+        NotImplementedError: _description_
+    """
     assert not all([point is None, id is None, name is None]), (
         "1 parameter point, id or name must be given"
     )
@@ -204,57 +232,37 @@ def get_weather(point=None, id=None, name=None):
             vec=np.asarray([point], dtype=(np.float64, np.float64)),
             ref=df_ref_geo[["lat", "lon"]].to_numpy(dtype=(np.float64, np.float64)),
         )
-        # mat = get_dist(
-        #     vec=np.asarray([point], dtype=(np.float64, np.float64)),
-        #     ref=df_ref_geo[["lat", "lon"]].to_numpy(dtype=(np.float64, np.float64)),)
 
-        # d, idx = mat.argmin(axis=1), mat.min(axis=1)
-
-    #     curl -X 'GET' \
-    #   'https://public-api.meteofrance.fr/public/DPClim/v1/commande-station/quotidienne?id-station=02035001&date-deb-periode=2025-01-01T00%3A00%3A00Z&date-fin-periode=2025-03-27T00%3A00%3A00Z' \
-    #   -H 'accept: */*'
-
-    # v1/commande-station/quotidienne?id-station=02035001&date-deb-periode=2025-01-01T00%3A00%3A00Z&date-fin-periode=2025-03-27T00%3A00%3A00Z
+    # closest station
+    # station_id = "02035001"
+    station_id = df_ref_geo.iloc[idx][["id"]].values[0][0]
+    station_id = f"{station_id:0>8}"  # padding avec des 0 pour être sur 8 chars
 
     # get weather data from closest station
-    # station_id = df_ref_geo.iloc[idx][["id"]]
-    # api = "v1/commande-station/quotidienne"
-    # url_point_weather = f"{url_api}/{api}?"
-    url_point_weather = """https://public-api.meteofrance.fr/public/DPClim/v1/commande-station/quotidienne?id-station=02035001&date-deb-periode=2025-01-01T00%3A00%3A00Z&date-fin-periode=2025-01-10T00%3A00%3A00Z"""
-
-    id_rqt = get_rqt(url_point_weather)
-    # {
-    # "elaboreProduitAvecDemandeResponse": {
-    #     "return": "2025001387957"
-    # }
-    # }
-
-    # api call
-    # https://public-api.meteofrance.fr/public/DPClim/v1/commande/fichier?id-cmde=2025001387957
-
-    # code 500 : commande échouée... voilou bonne journée
+    # url_point_weather = """https://public-api.meteofrance.fr/public/DPClim/v1/commande-station/quotidienne?id-station=02035001&date-deb-periode=2025-01-01T00%3A00%3A00Z&date-fin-periode=2025-01-10T00%3A00%3A00Z"""
+    url_point_weather = f"""https://public-api.meteofrance.fr/public/DPClim/v1/commande-station/quotidienne?id-station={station_id}&date-deb-periode={dates[0]}&date-fin-periode={dates[1]}"""
+    logger.info(f"Use url: {url_point_weather}")
+    id_rqt = get_rqt(url_point_weather, error="warn")
 
     # results
     id_cmde = id_rqt["elaboreProduitAvecDemandeResponse"]["return"]
     # url_rqt = "https://public-api.meteofrance.fr/public/DPClim/v1/commande/fichier?id-cmde=2025001387957"
     url_rqt = f"https://public-api.meteofrance.fr/public/DPClim/v1/commande/fichier?id-cmde={id_cmde}"
     # df = get_rqt(url_rqt, pd_result=True)
-    doc = get_rqt(url_rqt, pd_result=False)
+    doc = get_rqt(request_url=url_rqt, error="warn")
 
-    # df
-
-    # request_url = url_rqt
-
-    return
+    return doc
 
 
 if __name__ == "__main__":
     # on veut
     # donner un site/coord/... + temporalité et récupérer les infos requises
+    logger = logging.getLogger("meteofr")
+    logger.setLevel(logging.DEBUG)
 
     # create console handler with a higher log level
     ch = logging.StreamHandler()
-    ch.setLevel(logging.DEBUG)
+    # ch.setLevel(logging.DEBUG)
     # create formatter and add it to the handlers
     formatter = logging.Formatter(
         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
@@ -263,8 +271,27 @@ if __name__ == "__main__":
     # add the handlers to the logger
     logger.addHandler(ch)
 
-    test_point = (45.932050, 2.000847)
-
     logger.info("Howdy !")
 
-    get_weather(point=test_point)
+    test_point = (45.932050, 2.000847)
+
+    td = pd.Timestamp("today", tz="Europe/Paris").normalize().tz_convert("UTC")
+    start = td - pd.Timedelta("1d")
+    time_fmt = "%Y-%m-%dT%H:%M:%SZ"
+
+    # --- test simple
+    # dates = [start.strftime(time_fmt), td.strftime(time_fmt)]
+    # get_weather(dates=dates, point=test_point)
+
+    dates = pd.date_range(start=td - pd.Timedelta("30d"), end=td)
+    from itertools import pairwise
+
+    res = []
+    for i, j in pairwise(dates):
+        res.append(
+            get_weather(
+                dates=[i.strftime(time_fmt), j.strftime(time_fmt)], point=test_point
+            )
+        )
+
+    ""
