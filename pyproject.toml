@@ -11,7 +11,7 @@ requires-python = ">=3.8"
 license = "MIT"
 keywords = []
 authors = [
-  { name = "Camille Bonamy", email = "44895259+goodfr@users.noreply.github.com" },
+  { name = "goodfr", email = "44895259+goodfr@users.noreply.github.com" },
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -27,9 +27,9 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Documentation = "https://github.com/Camille Bonamy/meteofr#readme"
-Issues = "https://github.com/Camille Bonamy/meteofr/issues"
-Source = "https://github.com/Camille Bonamy/meteofr"
+Documentation = "https://github.com/goodfr/meteofr#readme"
+Issues = "https://github.com/goodfr/meteofr/issues"
+Source = "https://github.com/goodfr/meteofr"
 
 [tool.hatch.version]
 path = "src/meteofr/__about__.py"
