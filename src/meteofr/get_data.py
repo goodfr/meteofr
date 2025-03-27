@@ -1,9 +1,10 @@
 import numpy as np
 import pandas as pd
 import requests
-import numba
+import numba # type; ignore
 from functools import cache
 import logging
+from typing import Any
 
 # ref: https://portail-api.meteofrance.fr/web/fr/api/test/a5935def-80ae-4e7e-83bc-3ef622f0438d/fe8c79d6-dcae-46f7-9e1f-6d5a8be4c3b8
 
@@ -74,6 +75,32 @@ class Client(object):
         self.session.headers.update({"Authorization": "Bearer %s" % token})
 
 
+def get_rqt(request_url: str, format_result: str = "json") -> Any:
+    from json import loads
+
+    client = Client()
+    client.session.headers.update({"Accept": "application/json"})
+    response = client.request(
+        "GET",
+        request_url,
+    )
+
+    if response.status_code >= 200 and response.status_code < 300:
+        pass
+    else:
+        raise ValueError(
+            f"response.status_code: {response.status_code}\n{response.url}\n{response.text}"
+        )
+
+    if format_result == "pd":
+        df: pd.DataFrame = pd.json_normalize(loads(response.content))
+        return df
+    elif format_result == "json":
+        return loads(response.content)
+    else:
+        return response
+
+
 @cache
 def get_ref(dep: str, prm: str) -> pd.DataFrame:
     """To get data from API into a DataFrame result
@@ -85,32 +112,16 @@ def get_ref(dep: str, prm: str) -> pd.DataFrame:
     Returns:
         pd.DataFrame: result dataframe
     """
-    from json import loads
 
     logger.debug(f"begin get ref: {dep}, {prm}")
     request_url = (
         f"{url_api}/liste-stations/quotidienne?id-departement={dep}&parametre={prm}"
     )
 
-    client = Client()
-
-    client.session.headers.update({"Accept": "application/json"})
-
-    response = client.request(
-        "GET",
-        request_url,
-    )
-
-    df_ref_geo: pd.DataFrame = pd.json_normalize(loads(response.content))
-    
-
-    return df_ref_geo
+    return get_rqt(request_url=request_url, pd_result=True)
 
 
-# use caching here ?
-@cache
 def get_all_ref(list_dep: list[str] = list_dep) -> pd.DataFrame:
-
     from pathlib import Path
     from os import makedirs, path
     from tqdm import tqdm
@@ -121,12 +132,12 @@ def get_all_ref(list_dep: list[str] = list_dep) -> pd.DataFrame:
     makedirs(dir_cache, exist_ok=True)
 
     df_list = []
-    for i in tqdm(list_dep[:10]):
+    for i in tqdm(list_dep):
         df_list.append(get_ref(dep=i, prm="temperature"))
 
     df_ref_geo = pd.concat(df_list)
     df_ref_geo.to_csv(path.join(dir_cache, "ref.csv"))
-    
+
     logger.debug("end get all ref")
 
     return df_ref_geo
@@ -148,7 +159,7 @@ def hvs(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
 
 @numba.jit
 def get_dist(vec: np.ndarray, ref: np.ndarray) -> np.ndarray:
-    """Numba attempt to speed up things"""
+    """Find haversine distance matrix."""
     n = vec.shape[0]
     m = ref.shape[0]
     res = np.zeros(shape=(n, m))
@@ -161,12 +172,19 @@ def get_dist(vec: np.ndarray, ref: np.ndarray) -> np.ndarray:
     return res
 
 
-@numba.jit
 def get_closest_point(
     vec: np.ndarray, ref: np.ndarray
 ) -> tuple[np.ndarray, np.ndarray]:
-    mat = get_dist(vec, ref)
+    """Get closest station from point.
 
+    Args:
+        vec (np.ndarray): _description_
+        ref (np.ndarray): _description_
+
+    Returns:
+        tuple[np.ndarray, np.ndarray]: _description_
+    """
+    mat = get_dist(vec, ref)
     return mat.argmin(axis=1), mat.min(axis=1)
 
 
@@ -176,23 +194,57 @@ def get_weather(point=None, id=None, name=None):
     )
 
     # get all stations
-    df_ref_geo = get_all_ref()
+    df_ref_geo = get_all_ref(list_dep=list_dep[:10])
 
     # find the closest
     if id or name:
         raise NotImplementedError
     elif point is not None:
         d, idx = get_closest_point(
-            vec=np.asarray(
-                [point],
-                dtype=(float, float),
-                ref=df_ref_geo.to_numpy(dtype=(float, float)),
-            )
+            vec=np.asarray([point], dtype=(np.float64, np.float64)),
+            ref=df_ref_geo[["lat", "lon"]].to_numpy(dtype=(np.float64, np.float64)),
         )
+        # mat = get_dist(
+        #     vec=np.asarray([point], dtype=(np.float64, np.float64)),
+        #     ref=df_ref_geo[["lat", "lon"]].to_numpy(dtype=(np.float64, np.float64)),)
+
+        # d, idx = mat.argmin(axis=1), mat.min(axis=1)
+
+    #     curl -X 'GET' \
+    #   'https://public-api.meteofrance.fr/public/DPClim/v1/commande-station/quotidienne?id-station=02035001&date-deb-periode=2025-01-01T00%3A00%3A00Z&date-fin-periode=2025-03-27T00%3A00%3A00Z' \
+    #   -H 'accept: */*'
+
+    # v1/commande-station/quotidienne?id-station=02035001&date-deb-periode=2025-01-01T00%3A00%3A00Z&date-fin-periode=2025-03-27T00%3A00%3A00Z
+
     # get weather data from closest station
+    # station_id = df_ref_geo.iloc[idx][["id"]]
+    # api = "v1/commande-station/quotidienne"
+    # url_point_weather = f"{url_api}/{api}?"
+    url_point_weather = """https://public-api.meteofrance.fr/public/DPClim/v1/commande-station/quotidienne?id-station=02035001&date-deb-periode=2025-01-01T00%3A00%3A00Z&date-fin-periode=2025-01-10T00%3A00%3A00Z"""
+
+    id_rqt = get_rqt(url_point_weather)
+    # {
+    # "elaboreProduitAvecDemandeResponse": {
+    #     "return": "2025001387957"
+    # }
+    # }
+
     # api call
+    # https://public-api.meteofrance.fr/public/DPClim/v1/commande/fichier?id-cmde=2025001387957
+
+    # code 500 : commande échouée... voilou bonne journée
 
     # results
+    id_cmde = id_rqt["elaboreProduitAvecDemandeResponse"]["return"]
+    # url_rqt = "https://public-api.meteofrance.fr/public/DPClim/v1/commande/fichier?id-cmde=2025001387957"
+    url_rqt = f"https://public-api.meteofrance.fr/public/DPClim/v1/commande/fichier?id-cmde={id_cmde}"
+    # df = get_rqt(url_rqt, pd_result=True)
+    doc = get_rqt(url_rqt, pd_result=False)
+
+    # df
+
+    # request_url = url_rqt
+
     return
 
 
@@ -212,5 +264,7 @@ if __name__ == "__main__":
     logger.addHandler(ch)
 
     test_point = (45.932050, 2.000847)
+
+    logger.info("Howdy !")
 
     get_weather(point=test_point)
