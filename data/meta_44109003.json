@@ -1,0 +1,632 @@
+[
+    {
+        "id": 44109003,
+        "nom": "NANTES (PETIT-PORT)",
+        "lieuDit": "OBS. DU PETIT PORT",
+        "bassin": "M800",
+        "dateDebut": "1824-01-01 00:00:00",
+        "dateFin": "1965-02-28 00:00:00",
+        "typesPoste": [
+            {
+                "type": 4,
+                "dateDebut": "1824-01-01 00:00:00",
+                "dateFin": "1965-02-28 00:00:00"
+            }
+        ],
+        "parametres": [
+            {
+                "nom": "AMPLITUDE ENTRE TN ET TX QUOTIDIEN",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-31 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE CHAUFFAGISTE",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE METEO",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES DUREES D'INSOLATION",
+                "dateDebut": "1940-01-01 00:00:00",
+                "dateFin": "1944-06-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES HAUTEURS DE PRECIPITATIONS",
+                "dateDebut": "1877-01-01 00:00:00",
+                "dateFin": "1877-10-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES HAUTEURS DE PRECIPITATIONS",
+                "dateDebut": "1878-09-01 00:00:00",
+                "dateFin": "1878-12-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES HAUTEURS DE PRECIPITATIONS",
+                "dateDebut": "1880-02-01 00:00:00",
+                "dateFin": "1880-05-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES HAUTEURS DE PRECIPITATIONS",
+                "dateDebut": "1880-08-01 00:00:00",
+                "dateFin": "1937-02-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES HAUTEURS DE PRECIPITATIONS",
+                "dateDebut": "1938-03-01 00:00:00",
+                "dateFin": "1964-11-01 00:00:00"
+            },
+            {
+                "nom": "DUREE D'INSOLATION QUOTIDIENNE",
+                "dateDebut": "1940-01-01 00:00:00",
+                "dateFin": "1944-06-30 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR DE PRECIPITATIONS QUOTIDIENNE",
+                "dateDebut": "1877-01-01 00:00:00",
+                "dateFin": "1877-10-31 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR DE PRECIPITATIONS QUOTIDIENNE",
+                "dateDebut": "1878-09-01 00:00:00",
+                "dateFin": "1878-12-31 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR DE PRECIPITATIONS QUOTIDIENNE",
+                "dateDebut": "1880-02-01 00:00:00",
+                "dateFin": "1937-02-15 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR DE PRECIPITATIONS QUOTIDIENNE",
+                "dateDebut": "1938-03-11 00:00:00",
+                "dateFin": "1964-11-30 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1824-01-01 00:00:00",
+                "dateFin": "1829-04-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1829-07-01 00:00:00",
+                "dateFin": "1830-02-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1830-09-01 00:00:00",
+                "dateFin": "1831-05-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1831-10-01 00:00:00",
+                "dateFin": "1832-08-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1832-11-01 00:00:00",
+                "dateFin": "1833-04-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1833-09-01 00:00:00",
+                "dateFin": "1834-08-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1834-11-01 00:00:00",
+                "dateFin": "1835-04-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1835-09-01 00:00:00",
+                "dateFin": "1877-02-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1877-06-01 00:00:00",
+                "dateFin": "1877-06-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1877-11-01 00:00:00",
+                "dateFin": "1878-08-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1878-11-01 00:00:00",
+                "dateFin": "1880-01-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1880-06-01 00:00:00",
+                "dateFin": "1880-07-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1937-02-01 00:00:00",
+                "dateFin": "1938-03-01 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM DES TN DU MOIS",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM DES TX DU MOIS",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES (TN+TX)/2",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TN DU MOIS",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TX DU MOIS",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE MENSUELLE ESTIMEE DES TN DU MOIS",
+                "dateDebut": "1915-01-01 00:00:00",
+                "dateFin": "1934-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE MENSUELLE ESTIMEE DES TN DU MOIS",
+                "dateDebut": "1946-01-01 00:00:00",
+                "dateFin": "1949-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE MENSUELLE ESTIMEE DES TX DU MOIS",
+                "dateDebut": "1915-01-01 00:00:00",
+                "dateFin": "1934-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE MENSUELLE ESTIMEE DES TX DU MOIS",
+                "dateDebut": "1946-01-01 00:00:00",
+                "dateFin": "1949-12-01 00:00:00"
+            },
+            {
+                "nom": "NBRE DE JOURS PRESENTS AVEC ORAGE",
+                "dateDebut": "1933-08-01 00:00:00",
+                "dateFin": "1933-08-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GELEE",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1928-01-01 00:00:00",
+                "dateFin": "1928-01-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1946-01-01 00:00:00",
+                "dateFin": "1947-01-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1949-03-01 00:00:00",
+                "dateFin": "1950-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1959-01-01 00:00:00",
+                "dateFin": "1964-04-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=1 MM",
+                "dateDebut": "1877-01-01 00:00:00",
+                "dateFin": "1877-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=1 MM",
+                "dateDebut": "1878-09-01 00:00:00",
+                "dateFin": "1878-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=1 MM",
+                "dateDebut": "1880-02-01 00:00:00",
+                "dateFin": "1880-05-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=1 MM",
+                "dateDebut": "1880-08-01 00:00:00",
+                "dateFin": "1937-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=1 MM",
+                "dateDebut": "1938-03-01 00:00:00",
+                "dateFin": "1964-11-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=10 MM",
+                "dateDebut": "1877-01-01 00:00:00",
+                "dateFin": "1877-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=10 MM",
+                "dateDebut": "1878-09-01 00:00:00",
+                "dateFin": "1878-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=10 MM",
+                "dateDebut": "1880-02-01 00:00:00",
+                "dateFin": "1880-05-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=10 MM",
+                "dateDebut": "1880-08-01 00:00:00",
+                "dateFin": "1937-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=10 MM",
+                "dateDebut": "1938-03-01 00:00:00",
+                "dateFin": "1964-11-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=100 MM",
+                "dateDebut": "1877-01-01 00:00:00",
+                "dateFin": "1877-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=100 MM",
+                "dateDebut": "1878-09-01 00:00:00",
+                "dateFin": "1878-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=100 MM",
+                "dateDebut": "1880-02-01 00:00:00",
+                "dateFin": "1880-05-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=100 MM",
+                "dateDebut": "1880-08-01 00:00:00",
+                "dateFin": "1937-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=100 MM",
+                "dateDebut": "1938-03-01 00:00:00",
+                "dateFin": "1964-11-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=30 MM",
+                "dateDebut": "1877-01-01 00:00:00",
+                "dateFin": "1877-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=30 MM",
+                "dateDebut": "1878-09-01 00:00:00",
+                "dateFin": "1878-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=30 MM",
+                "dateDebut": "1880-02-01 00:00:00",
+                "dateFin": "1880-05-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=30 MM",
+                "dateDebut": "1880-08-01 00:00:00",
+                "dateFin": "1937-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=30 MM",
+                "dateDebut": "1938-03-01 00:00:00",
+                "dateFin": "1964-11-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=5 MM",
+                "dateDebut": "1877-01-01 00:00:00",
+                "dateFin": "1877-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=5 MM",
+                "dateDebut": "1878-09-01 00:00:00",
+                "dateFin": "1878-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=5 MM",
+                "dateDebut": "1880-02-01 00:00:00",
+                "dateFin": "1880-05-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=5 MM",
+                "dateDebut": "1880-08-01 00:00:00",
+                "dateFin": "1937-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=5 MM",
+                "dateDebut": "1938-03-01 00:00:00",
+                "dateFin": "1964-11-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=50 MM",
+                "dateDebut": "1877-01-01 00:00:00",
+                "dateFin": "1877-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=50 MM",
+                "dateDebut": "1878-09-01 00:00:00",
+                "dateFin": "1878-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=50 MM",
+                "dateDebut": "1880-02-01 00:00:00",
+                "dateFin": "1880-05-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=50 MM",
+                "dateDebut": "1880-08-01 00:00:00",
+                "dateFin": "1937-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=50 MM",
+                "dateDebut": "1938-03-01 00:00:00",
+                "dateFin": "1964-11-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC SIGMA<=20%",
+                "dateDebut": "1940-01-01 00:00:00",
+                "dateFin": "1944-06-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC SIGMA=0%",
+                "dateDebut": "1940-01-01 00:00:00",
+                "dateFin": "1944-06-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC SIGMA>=80%",
+                "dateDebut": "1940-01-01 00:00:00",
+                "dateFin": "1944-06-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+10\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+15\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+20\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-10\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-5\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+20\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+25\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=0\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=20\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=27\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=25\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=30\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=32\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=35\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE D'ORAGE QUOTIDIENNE",
+                "dateDebut": "1933-08-15 00:00:00",
+                "dateFin": "1933-08-15 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1928-01-08 00:00:00",
+                "dateFin": "1928-01-08 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1946-01-19 00:00:00",
+                "dateFin": "1947-01-31 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1949-03-05 00:00:00",
+                "dateFin": "1950-12-31 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1959-01-12 00:00:00",
+                "dateFin": "1964-04-03 00:00:00"
+            },
+            {
+                "nom": "PRECIPITATION MAXIMALE EN 24H",
+                "dateDebut": "1877-01-01 00:00:00",
+                "dateFin": "1877-10-01 00:00:00"
+            },
+            {
+                "nom": "PRECIPITATION MAXIMALE EN 24H",
+                "dateDebut": "1878-09-01 00:00:00",
+                "dateFin": "1878-12-01 00:00:00"
+            },
+            {
+                "nom": "PRECIPITATION MAXIMALE EN 24H",
+                "dateDebut": "1880-02-01 00:00:00",
+                "dateFin": "1880-05-01 00:00:00"
+            },
+            {
+                "nom": "PRECIPITATION MAXIMALE EN 24H",
+                "dateDebut": "1880-08-01 00:00:00",
+                "dateFin": "1937-02-01 00:00:00"
+            },
+            {
+                "nom": "PRECIPITATION MAXIMALE EN 24H",
+                "dateDebut": "1938-03-01 00:00:00",
+                "dateFin": "1964-11-01 00:00:00"
+            },
+            {
+                "nom": "PRESSION MER HORAIRE",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1914-12-31 23:00:00"
+            },
+            {
+                "nom": "PRESSION MER HORAIRE",
+                "dateDebut": "1940-01-01 00:00:00",
+                "dateFin": "1944-06-30 23:00:00"
+            },
+            {
+                "nom": "PRESSION STATION HORAIRE",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1914-12-31 23:00:00"
+            },
+            {
+                "nom": "PRESSION STATION HORAIRE",
+                "dateDebut": "1940-01-01 00:00:00",
+                "dateFin": "1944-06-30 23:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1928-01-01 00:00:00",
+                "dateFin": "1937-02-15 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1938-03-11 00:00:00",
+                "dateFin": "1945-12-31 00:00:00"
+            },
+            {
+                "nom": "RAPPORT INSOLATION QUOTIDIEN",
+                "dateDebut": "1940-01-01 00:00:00",
+                "dateFin": "1944-06-30 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 0\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 10\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 6\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 8\u00b0C",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "TEMPERATURE MAXIMALE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-31 00:00:00"
+            },
+            {
+                "nom": "TEMPERATURE MINIMALE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-31 00:00:00"
+            },
+            {
+                "nom": "TEMPERATURE SOUS ABRI HORAIRE",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1914-12-31 23:00:00"
+            },
+            {
+                "nom": "TEMPERATURE SOUS ABRI HORAIRE",
+                "dateDebut": "1940-01-01 00:00:00",
+                "dateFin": "1944-06-30 23:00:00"
+            },
+            {
+                "nom": "TN MINI DU MOIS",
+                "dateDebut": "1854-01-01 00:00:00",
+                "dateFin": "1860-11-01 00:00:00"
+            },
+            {
+                "nom": "TN MINI DU MOIS",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            },
+            {
+                "nom": "TX MAXI DU MOIS",
+                "dateDebut": "1854-01-01 00:00:00",
+                "dateFin": "1860-11-01 00:00:00"
+            },
+            {
+                "nom": "TX MAXI DU MOIS",
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1945-12-01 00:00:00"
+            }
+        ],
+        "producteurs": [
+            {
+                "nom": "AUTRES",
+                "dateDebut": "1824-01-01 00:00:00",
+                "dateFin": "1965-02-28 00:00:00"
+            }
+        ],
+        "positions": [
+            {
+                "altitude": 13,
+                "latitude": 47.218333333333334,
+                "longitude": -1.5533333333333332,
+                "dateDebut": "1824-01-01 00:00:00",
+                "dateFin": "1880-12-31 00:00:00"
+            },
+            {
+                "altitude": 41,
+                "latitude": 47.218333333333334,
+                "longitude": -1.5533333333333332,
+                "dateDebut": "1881-01-01 00:00:00",
+                "dateFin": "1965-02-28 00:00:00"
+            }
+        ]
+    }
+]

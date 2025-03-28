@@ -1,0 +1,492 @@
+[
+    {
+        "id": 44109012,
+        "nom": "NANTES (NANTES-VILLE)",
+        "lieuDit": "LE GRAND BLOTTEREAU",
+        "bassin": "M800",
+        "dateDebut": "1989-01-01 00:00:00",
+        "dateFin": "",
+        "typesPoste": [
+            {
+                "type": 4,
+                "dateDebut": "1989-01-01 00:00:00",
+                "dateFin": "2019-07-01 00:00:00"
+            },
+            {
+                "type": 3,
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": "2021-09-13 00:00:00"
+            },
+            {
+                "type": 2,
+                "dateDebut": "2021-09-14 00:00:00",
+                "dateFin": ""
+            }
+        ],
+        "parametres": [
+            {
+                "nom": "AMPLITUDE ENTRE TN ET TX QUOTIDIEN",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DE PRECIPITATIONS EN 6 MN",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DECADAIRE DES TM>0 AVEC TM NON ECRETEE",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DECADAIRE DES TM>10, TM ECRETEE A 30 POUR TX, 10 POUR TN",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DECADAIRE DES TM>6 AVEC TM ECRETEE A 30 POUR TX",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DECADAIRE DES TM>8 AVEC TM ECRETEE A 30 POUR TX",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE CHAUFFAGISTE",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE METEO",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "CUMUL DES HAUTEURS DE PRECIPITATIONS",
+                "dateDebut": "1992-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DUREE DE GEL HORAIRE",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "DUREE DE GEL QUOTIDIENNE",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "ETP CALCULEE AU POINT DE GRILLE LE PLUS PROCHE",
+                "dateDebut": "2019-05-12 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HAUTEUR DE PRECIPITATIONS HORAIRE",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HAUTEUR DE PRECIPITATIONS QUOTIDIENNE",
+                "dateDebut": "1992-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "2000-05-01 00:00:00",
+                "dateFin": "2000-05-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "2003-02-01 00:00:00",
+                "dateFin": "2003-02-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR TOTALE DECADAIRE DES PRECIPITATIONS",
+                "dateDebut": "1996-01-21 00:00:00",
+                "dateFin": "1996-01-30 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR TOTALE DECADAIRE DES PRECIPITATIONS",
+                "dateDebut": "2004-05-01 00:00:00",
+                "dateFin": "2004-05-10 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR TOTALE DECADAIRE DES PRECIPITATIONS",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DU TN SOUS ABRI HORAIRE",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DU TN SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "2019-07-03 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DU TX SOUS ABRI HORAIRE",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "HEURE DU TX SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MAXIMUM DES TN DU MOIS",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MINIMUM DES TX DU MOIS",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DECADAIRE DE LA TEMPERATURE MAXI",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DECADAIRE DE LA TEMPERATURE MINI",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DES (TN+TX)/2",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DES TM",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DES TN DU MOIS",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "MOYENNE DES TX DU MOIS",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NBRE DE JOURS PRESENT AVEC BROUILLARD",
+                "dateDebut": "2014-11-01 00:00:00",
+                "dateFin": "2014-11-01 00:00:00"
+            },
+            {
+                "nom": "NBRE DE JOURS PRESENTS AVEC ORAGE",
+                "dateDebut": "2016-05-01 00:00:00",
+                "dateFin": "2017-07-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GELEE",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "2010-11-01 00:00:00",
+                "dateFin": "2010-11-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "2017-07-01 00:00:00",
+                "dateFin": "2017-07-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "2006-01-01 00:00:00",
+                "dateFin": "2006-03-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "2009-12-01 00:00:00",
+                "dateFin": "2009-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "2012-02-01 00:00:00",
+                "dateFin": "2013-01-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "2015-02-01 00:00:00",
+                "dateFin": "2015-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "2018-02-01 00:00:00",
+                "dateFin": "2018-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=1 MM",
+                "dateDebut": "1992-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=10 MM",
+                "dateDebut": "1992-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=100 MM",
+                "dateDebut": "1992-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=30 MM",
+                "dateDebut": "1992-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=5 MM",
+                "dateDebut": "1992-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=50 MM",
+                "dateDebut": "1992-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TM>=+24\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+10\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+15\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+20\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-10\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-5\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+20\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+25\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=0\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=20\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=27\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=25\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=30\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=32\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=35\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "OCCURRENCE D'ORAGE QUOTIDIENNE",
+                "dateDebut": "2016-05-28 00:00:00",
+                "dateFin": "2017-07-09 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE BROUILLARD QUOTIDIENNE",
+                "dateDebut": "2014-11-08 00:00:00",
+                "dateFin": "2014-11-08 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE GRELE QUOTIDIENNE",
+                "dateDebut": "2010-11-07 00:00:00",
+                "dateFin": "2010-11-07 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE GRELE QUOTIDIENNE",
+                "dateDebut": "2017-07-09 00:00:00",
+                "dateFin": "2017-07-09 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "2006-01-28 00:00:00",
+                "dateFin": "2006-03-04 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "2009-12-17 00:00:00",
+                "dateFin": "2009-12-17 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "2012-02-04 00:00:00",
+                "dateFin": "2013-01-18 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "2015-02-23 00:00:00",
+                "dateFin": "2015-02-23 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "2018-02-28 00:00:00",
+                "dateFin": "2018-02-28 00:00:00"
+            },
+            {
+                "nom": "PRECIPITATION MAXIMALE EN 24H",
+                "dateDebut": "1992-01-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "QUANTITE DE PRECIPITATIONS LORS DE L'EPISODE PLUVIEUX",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2001-01-16 00:00:00",
+                "dateFin": "2001-01-30 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2004-02-18 00:00:00",
+                "dateFin": "2019-06-30 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 0\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 10\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 6\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 8\u00b0C",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE MAXIMALE SOUS ABRI HORAIRE",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE MAXIMALE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE MINIMALE SOUS ABRI HORAIRE",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE MINIMALE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE MOYENNE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "2019-07-03 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TEMPERATURE SOUS ABRI HORAIRE",
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TN MINI DU MOIS",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            },
+            {
+                "nom": "TX MAXI DU MOIS",
+                "dateDebut": "2019-07-01 00:00:00",
+                "dateFin": ""
+            }
+        ],
+        "producteurs": [
+            {
+                "nom": "AUTRES",
+                "dateDebut": "1989-01-01 00:00:00",
+                "dateFin": "2004-03-31 00:00:00"
+            },
+            {
+                "nom": "METEO-FRANCE",
+                "dateDebut": "2004-04-01 00:00:00",
+                "dateFin": ""
+            }
+        ],
+        "positions": [
+            {
+                "altitude": 17,
+                "latitude": 47.221,
+                "longitude": -1.543,
+                "dateDebut": "1989-01-01 00:00:00",
+                "dateFin": "2019-07-01 00:00:00"
+            },
+            {
+                "altitude": 17,
+                "latitude": 47.227666666666664,
+                "longitude": -1.514,
+                "dateDebut": "2019-07-02 00:00:00",
+                "dateFin": ""
+            }
+        ]
+    }
+]

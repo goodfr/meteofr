@@ -1,0 +1,350 @@
+[
+    {
+        "id": 44009001,
+        "nom": "BASSE-GOULAINE (BSE-GOULAINE)",
+        "lieuDit": "EC.LE-GRIGNON",
+        "bassin": "M623",
+        "dateDebut": "1991-01-01 00:00:00",
+        "dateFin": "1998-12-31 00:00:00",
+        "typesPoste": [
+            {
+                "type": 4,
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-31 00:00:00"
+            }
+        ],
+        "parametres": [
+            {
+                "nom": "AMPLITUDE ENTRE TN ET TX QUOTIDIEN",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-31 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE CHAUFFAGISTE",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE METEO",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES HAUTEURS DE PRECIPITATIONS",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR DE PRECIPITATIONS QUOTIDIENNE",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-31 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM DES TN DU MOIS",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM DES TX DU MOIS",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES (TN+TX)/2",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TN DU MOIS",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TX DU MOIS",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NBRE DE JOURS PRESENT AVEC BROUILLARD",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NBRE DE JOURS PRESENTS AVEC ORAGE",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GELEE",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "1992-04-01 00:00:00",
+                "dateFin": "1993-04-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "1996-06-01 00:00:00",
+                "dateFin": "1996-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1991-02-01 00:00:00",
+                "dateFin": "1991-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1994-02-01 00:00:00",
+                "dateFin": "1994-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1995-12-01 00:00:00",
+                "dateFin": "1998-01-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=1 MM",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=10 MM",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=100 MM",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=30 MM",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=5 MM",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=50 MM",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+10\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+15\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+20\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-10\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-5\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+20\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+25\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=0\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=20\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=27\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=25\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=30\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=32\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=35\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE D'ORAGE QUOTIDIENNE",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-31 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE BROUILLARD QUOTIDIENNE",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-31 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE GRELE QUOTIDIENNE",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-31 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1991-02-07 00:00:00",
+                "dateFin": "1991-02-18 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1994-02-14 00:00:00",
+                "dateFin": "1998-12-25 00:00:00"
+            },
+            {
+                "nom": "PRECIPITATION MAXIMALE EN 24H",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1991-01-19 00:00:00",
+                "dateFin": "1991-04-11 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1991-07-01 00:00:00",
+                "dateFin": "1991-07-19 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1991-12-01 00:00:00",
+                "dateFin": "1992-05-11 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1992-08-19 00:00:00",
+                "dateFin": "1993-08-16 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1993-11-08 00:00:00",
+                "dateFin": "1994-05-21 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1994-09-28 00:00:00",
+                "dateFin": "1995-05-19 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1995-09-20 00:00:00",
+                "dateFin": "1996-04-29 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1996-10-04 00:00:00",
+                "dateFin": "1996-12-24 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1997-04-26 00:00:00",
+                "dateFin": "1997-06-24 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1997-10-20 00:00:00",
+                "dateFin": "1998-01-18 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1998-04-12 00:00:00",
+                "dateFin": "1998-12-25 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 0\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 10\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 6\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 8\u00b0C",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "TEMPERATURE MAXIMALE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-31 00:00:00"
+            },
+            {
+                "nom": "TEMPERATURE MINIMALE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-31 00:00:00"
+            },
+            {
+                "nom": "TN MINI DU MOIS",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            },
+            {
+                "nom": "TX MAXI DU MOIS",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-01 00:00:00"
+            }
+        ],
+        "producteurs": [
+            {
+                "nom": "METEO-FRANCE",
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-31 00:00:00"
+            }
+        ],
+        "positions": [
+            {
+                "altitude": 6,
+                "latitude": 47.215,
+                "longitude": -1.4666666666666666,
+                "dateDebut": "1991-01-01 00:00:00",
+                "dateFin": "1998-12-31 00:00:00"
+            }
+        ]
+    }
+]

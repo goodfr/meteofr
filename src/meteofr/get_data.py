@@ -5,6 +5,7 @@ import numba  # type: ignore
 from functools import cache
 import logging
 from typing import Any, Optional
+from time import sleep
 
 # ref: https://portail-api.meteofrance.fr/web/fr/api/test/a5935def-80ae-4e7e-83bc-3ef622f0438d/fe8c79d6-dcae-46f7-9e1f-6d5a8be4c3b8
 
@@ -152,6 +153,7 @@ def get_all_ref(list_dep: list[str] = list_dep, use_cache: bool = True) -> pd.Da
     from pathlib import Path
     from os import makedirs, path
     from tqdm import tqdm
+    from time import sleep
 
     logger.debug("begin get all ref")
     dir_cache = Path.home().joinpath(".meteofr")
@@ -215,9 +217,9 @@ def get_dist(vec: np.ndarray, ref: np.ndarray) -> np.ndarray:
     return res
 
 
-def get_closest_point(
-    vec: np.ndarray, ref: np.ndarray
-) -> tuple[np.ndarray, np.ndarray]:
+def get_closest_n_point(
+    vec: np.ndarray, ref: np.ndarray, n: int = 5
+) -> np.ndarray:  # tuple[np.ndarray, np.ndarray]
     """Get closest station from point.
 
     Args:
@@ -228,10 +230,18 @@ def get_closest_point(
         tuple[np.ndarray, np.ndarray]: _description_
     """
     mat = get_dist(vec, ref)
-    return mat.argmin(axis=1), mat.min(axis=1)
+
+    # return mat.argmin(axis=1), mat.min(axis=1)
+    # ii = np.argsort(mat, axis=1)[:,:5]
+    # mat[ii[0:5,:]]
+    # ii.ravel()
+    # mat[:,ii.ravel()]
+    # mat[:,]
+    # np.sort(mat, axis=1)[:5]
+    return np.argsort(mat, axis=1)[:, :5]
 
 
-def get_weather(
+def get_weather_point(
     dates: list[str],
     point: Optional[tuple[float, float]] = None,
     id: Optional[str] = None,
@@ -265,54 +275,55 @@ def get_weather(
         # get all stations
         df_ref_geo = get_all_ref(list_dep=list_dep)  # , use_cache=False 106 références
 
+    df_ref_geo = df_ref_geo.convert_dtypes()
+
+    # exclusion des typePoste 5
+    # une station de type 5 n'est pas expertisée ou son expertise n'est pas garantie.
+    # De plus, la disponibilité des données est occasionnelle
+    df_ref_geo = df_ref_geo.loc[df_ref_geo.typePoste != 5]
+
     # find the closest
     if id or name:
         raise NotImplementedError
     elif point is not None:
-        d, idx = get_closest_point(
+        # idx, d = get_closest_n_point(
+        idx = get_closest_n_point(
             vec=np.asarray([point], dtype=(np.float64, np.float64)),
             ref=df_ref_geo[["lat", "lon"]].to_numpy(dtype=(np.float64, np.float64)),
         )
 
-    # mat = get_dist(
-    #     vec=np.asarray([point], dtype=(np.float64, np.float64)),
-    #     ref=df_ref_geo[["lat", "lon"]].to_numpy(dtype=(np.float64, np.float64)),
-    # )
+    # --- Find closest & ACTIVE station
+    list_station_id = df_ref_geo.iloc[idx.ravel()]["id"].values.tolist()
+    list_station_id = [
+        f"{i:0>8}" for i in list_station_id
+    ]  # padding avec des 0 pour être sur 8 chars
 
-    # df_ref_geo.iloc[idx]
-    # df_ref_geo[["lat", "lon"]].apply(
-    #     lambda x: np.abs(x["lat"] - point[0] + x["lon"] - point[1]), axis=1
-    # ).sort_values()
-    # df_ref_geo[["lat", "lon"]].iloc[0].lat
-
-    # df_ref_geo["l1_dist"] = df_ref_geo[["lat", "lon"]].apply(
-    #     lambda x: np.abs(x["lat"] - point[0] + x["lon"] - point[1]), axis=1
-    # )
-    # df_ref_geo.sort_values(by="l1_dist")
-    # df_ref_geo["l2_dist"] = df_ref_geo[["lat", "lon"]].apply(
-    #     lambda x: np.sqrt((x["lat"] - point[0]) ** 2 + (x["lon"] - point[1]) ** 2),
-    #     axis=1,
-    # )
-    # df_ref_geo.sort_values(by="l2_dist")
-    # df_ref_geo["hvs_dist"] = df_ref_geo[["lat", "lon"]].apply(
-    #     lambda x: hvs(x["lat"], point[0], x["lon"], point[1]), axis=1
-    # )
-    # df_ref_geo.sort_values(by="hvs_dist")
-
-    # closest station
-    # station_id = "02035001"
-    station_id = df_ref_geo.iloc[idx][["id"]].values[0][0]
-    station_id = f"{station_id:0>8}"  # padding avec des 0 pour être sur 8 chars
-
+    # pour date de données dispo cf web service /information-station
     # metadonnées des variables disponibles pour la station
-    if dest_dir is not None:
+    for station_id in list_station_id:
         url_meta = f"https://public-api.meteofrance.fr/public/DPClim/v1/information-station?id-station={station_id}"
         df_meta = get_rqt(url_meta, error="warn")
-        with open(path.join(dest_dir, f"meta_{station_id}.json"), "w") as f:
-            f.write(dumps(df_meta))
+        if dest_dir is not None:
+            with open(path.join(dest_dir, f"meta_{station_id}.json"), "w") as f:
+                f.write(dumps(df_meta, indent=4))
+        start, end = df_meta[0]["dateDebut"], df_meta[0]["dateFin"]
+        end = end if end != "" else "9999-01-01 00:00:00"
+        if start <= dates[0] and dates[-1] <= end:
+            logger.info(f"station_id: {station_id} compatible with request")
+            break
+        elif start > dates[0]:
+            logger.info(
+                f"data insufficient for station_id: {station_id}, start: {start} > {dates[0]}"
+            )
+        elif end < dates[-1]:
+            logger.info(
+                f"data insufficient for station_id: {station_id}, end: {end} < {dates[-1]}"
+            )
+        else:
+            logger.info(f"data insufficient for station_id: {station_id}")
+        sleep(2)
 
     # get weather data from closest station
-    # url_point_weather = """https://public-api.meteofrance.fr/public/DPClim/v1/commande-station/quotidienne?id-station=02035001&date-deb-periode=2025-01-01T00%3A00%3A00Z&date-fin-periode=2025-01-10T00%3A00%3A00Z"""
     url_point_weather = f"""https://public-api.meteofrance.fr/public/DPClim/v1/commande-station/quotidienne?id-station={station_id}&date-deb-periode={dates[0]}&date-fin-periode={dates[1]}"""
     logger.info(f"Use url: {url_point_weather}")
     id_rqt = get_rqt(url_point_weather, format_result="json", error="warn")
@@ -326,60 +337,90 @@ def get_weather(
     return doc, station_id
 
 
-if __name__ == "__main__":
+def get_weather(
+    dates: list[str] | pd.DatetimeIndex,
+    point: tuple[float, float],
+    dest_dir="data",
+    logger_name: str = "meteofr",
+    list_dep: list[str] = list_dep,
+) -> pd.DataFrame:
+    """_summary_
+
+    Args:
+        dates (list[str] | pd.DatetimeIndex): _description_
+        point (tuple[float, float]): _description_
+        dest_dir (str, optional): _description_. Defaults to "data".
+        logger_name (str, optional): _description_. Defaults to "meteofr".
+        list_dep (list[str], optional): _description_. Defaults to list_dep.
+
+    Raises:
+        TypeError: _description_
+
+    Returns:
+        pd.DataFrame: _description_
+    """
     from itertools import pairwise
     from time import sleep
     from tqdm import tqdm
     from os import makedirs, path
 
-    # on veut
     # donner un site/coord/... + temporalité et récupérer les infos requises
-    logger = logging.getLogger("meteofr")
+    logger = logging.getLogger(logger_name)
     logger.setLevel(logging.DEBUG)
-
-    # create console handler with a higher log level
     ch = logging.StreamHandler()
-    # ch.setLevel(logging.DEBUG)
-    # create formatter and add it to the handlers
     formatter = logging.Formatter(
         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     )
     ch.setFormatter(formatter)
-    # add the handlers to the logger
     logger.addHandler(ch)
 
     logger.info("Howdy !")
 
-    # test_point = (45.932050, 2.000847)
-    test_point = (47.218102, -1.552800)
-
-    td = pd.Timestamp("today", tz="Europe/Paris").normalize().tz_convert("UTC")
-    start = td - pd.Timedelta("1d")
-    time_fmt = "%Y-%m-%dT%H:%M:%SZ"
-
-    # --- test simple
-    # dates = [start.strftime(time_fmt), td.strftime(time_fmt)]
-    # get_weather(dates=dates, point=test_point)
-
-    dates = pd.date_range(start=td - pd.Timedelta("30d"), end=td, freq="10d")
+    if isinstance(dates, pd.DatetimeIndex):
+        time_fmt = "%Y-%m-%dT%H:%M:%SZ"
+        dates_ = [i.strftime(time_fmt) for i in dates]
+    elif isinstance(dates[0], str):
+        dates_ = dates
+    else:
+        raise TypeError
 
     df_ref_geo = get_all_ref(list_dep=list_dep)  # , use_cache=False
 
     res = []
-    for i, j in tqdm(pairwise(dates)):
-        doc, station_id = get_weather(
-            dates=[i.strftime(time_fmt), j.strftime(time_fmt)],
-            point=test_point,
+    for i, j in tqdm(pairwise(dates_)):
+        doc, station_id = get_weather_point(
+            dates=[i, j],
+            point=point,
             df_ref_geo=df_ref_geo,
         )
         res.append(doc)
         sleep(2)
 
-    dest_dir = "data"
     makedirs(dest_dir, exist_ok=True)
     df = pd.concat(res)
 
     df.to_csv(path.join(dest_dir, f"df_res_{station_id}.csv"), index=False)
+
+    return df
+
+
+if __name__ == "__main__":
+    # --- test simple
+    # test_point = (45.932050, 2.000847)
+    test_point = (47.218102, -1.552800)
+
+    # dates = [start.strftime(time_fmt), td.strftime(time_fmt)]
+    # get_weather(dates=dates, point=test_point)
+
+    # dates = pd.DatetimeIndex([td - pd.Timedelta("370d"), td])  # 1 an max
+    td = pd.Timestamp("today", tz="Europe/Paris").normalize().tz_convert("UTC")
+    dates = pd.DatetimeIndex([td - pd.Timedelta("30d"), td])  # 1 an max
+    if (dates[1] - dates[0]).days > 365:
+        dates = pd.date_range(start=dates[0], end=dates[1], freq="YE").append(
+            dates[[1]]
+        )
+
+    df = get_weather(dates=dates, point=test_point)
 
     ""
 

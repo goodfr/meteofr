@@ -1,0 +1,1355 @@
+[
+    {
+        "id": 44070001,
+        "nom": "LA HAIE-FOUASSIERE (HAIE-FOUASSIERE)",
+        "lieuDit": "CROIX MORICEAU",
+        "bassin": "M623",
+        "dateDebut": "1939-01-01 00:00:00",
+        "dateFin": "2020-12-31 00:00:00",
+        "typesPoste": [
+            {
+                "type": 4,
+                "dateDebut": "1939-01-01 00:00:00",
+                "dateFin": "2020-12-31 00:00:00"
+            }
+        ],
+        "parametres": [
+            {
+                "nom": "AMPLITUDE ENTRE TN ET TX QUOTIDIEN",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-29 00:00:00"
+            },
+            {
+                "nom": "AMPLITUDE ENTRE TN ET TX QUOTIDIEN",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "2020-12-31 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE CHAUFFAGISTE",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE CHAUFFAGISTE",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE CHAUFFAGISTE",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE METEO",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE METEO",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES DJU SEUIL 18 METHODE METEO",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES HAUTEURS DE PRECIPITATIONS",
+                "dateDebut": "1948-04-01 00:00:00",
+                "dateFin": "1948-10-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES HAUTEURS DE PRECIPITATIONS",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "1951-08-01 00:00:00"
+            },
+            {
+                "nom": "CUMUL DES HAUTEURS DE PRECIPITATIONS",
+                "dateDebut": "1953-01-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2004-10-01 00:00:00",
+                "dateFin": "2006-03-31 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2009-12-18 00:00:00",
+                "dateFin": "2010-12-23 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2013-01-18 00:00:00",
+                "dateFin": "2013-01-18 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2015-02-03 00:00:00",
+                "dateFin": "2015-02-03 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2018-02-06 00:00:00",
+                "dateFin": "2018-02-06 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2020-05-01 00:00:00",
+                "dateFin": "2020-05-31 23:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE RELEVEE A 0600 FU",
+                "dateDebut": "2004-10-01 00:00:00",
+                "dateFin": "2006-03-31 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE RELEVEE A 0600 FU",
+                "dateDebut": "2009-12-18 00:00:00",
+                "dateFin": "2010-12-23 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE RELEVEE A 0600 FU",
+                "dateDebut": "2013-01-18 00:00:00",
+                "dateFin": "2013-01-18 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE RELEVEE A 0600 FU",
+                "dateDebut": "2015-02-03 00:00:00",
+                "dateFin": "2015-02-03 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE RELEVEE A 0600 FU",
+                "dateDebut": "2018-02-06 00:00:00",
+                "dateFin": "2018-02-06 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR DE NEIGE TOTALE RELEVEE A 0600 FU",
+                "dateDebut": "2020-05-01 00:00:00",
+                "dateFin": "2020-05-31 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR MAXIMALE DE NEIGE",
+                "dateDebut": "2004-10-01 00:00:00",
+                "dateFin": "2006-03-01 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR MAXIMALE DE NEIGE",
+                "dateDebut": "2010-02-01 00:00:00",
+                "dateFin": "2012-02-01 00:00:00"
+            },
+            {
+                "nom": "EPAISSEUR MAXIMALE DE NEIGE",
+                "dateDebut": "2015-02-01 00:00:00",
+                "dateFin": "2015-02-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR DE NEIGE FRAICHE TOMBEE EN 24H",
+                "dateDebut": "2004-10-01 00:00:00",
+                "dateFin": "2006-03-31 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR DE NEIGE FRAICHE TOMBEE EN 24H",
+                "dateDebut": "2010-02-10 00:00:00",
+                "dateFin": "2012-02-04 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR DE NEIGE FRAICHE TOMBEE EN 24H",
+                "dateDebut": "2015-02-03 00:00:00",
+                "dateFin": "2015-02-03 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR DE PRECIPITATIONS QUOTIDIENNE",
+                "dateDebut": "1948-04-01 00:00:00",
+                "dateFin": "1948-10-31 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR DE PRECIPITATIONS QUOTIDIENNE",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "1951-08-31 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR DE PRECIPITATIONS QUOTIDIENNE",
+                "dateDebut": "1953-01-01 00:00:00",
+                "dateFin": "2020-12-31 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1951-09-01 00:00:00",
+                "dateFin": "1952-12-01 00:00:00"
+            },
+            {
+                "nom": "HAUTEUR ESTIMEE DES PRECIPS MENSUELLES",
+                "dateDebut": "1976-09-01 00:00:00",
+                "dateFin": "1976-09-01 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM DES TN DU MOIS",
+                "dateDebut": "1960-01-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM DES TN DU MOIS",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM DES TN DU MOIS",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2004-10-01 00:00:00",
+                "dateFin": "2006-03-31 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2009-12-18 00:00:00",
+                "dateFin": "2010-12-23 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2013-01-18 00:00:00",
+                "dateFin": "2013-01-18 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2015-02-03 00:00:00",
+                "dateFin": "2015-02-03 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2018-02-06 00:00:00",
+                "dateFin": "2018-02-06 00:00:00"
+            },
+            {
+                "nom": "MAXIMUM QUOTIDIEN DES EPAISSEURS DE NEIGE TOTALE HORAIRE",
+                "dateDebut": "2020-05-01 00:00:00",
+                "dateFin": "2020-05-31 00:00:00"
+            },
+            {
+                "nom": "MINIMUM DES TX DU MOIS",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM DES TX DU MOIS",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "MINIMUM DES TX DU MOIS",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES (TN+TX)/2",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES (TN+TX)/2",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES (TN+TX)/2",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TN DU MOIS",
+                "dateDebut": "1960-01-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TN DU MOIS",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TN DU MOIS",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TX DU MOIS",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TX DU MOIS",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "MOYENNE DES TX DU MOIS",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NBRE DE JOURS PRESENT AVEC BROUILLARD",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1984-12-01 00:00:00"
+            },
+            {
+                "nom": "NBRE DE JOURS PRESENT AVEC BROUILLARD",
+                "dateDebut": "1987-01-01 00:00:00",
+                "dateFin": "2019-11-01 00:00:00"
+            },
+            {
+                "nom": "NBRE DE JOURS PRESENTS AVEC ORAGE",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1984-12-01 00:00:00"
+            },
+            {
+                "nom": "NBRE DE JOURS PRESENTS AVEC ORAGE",
+                "dateDebut": "1987-01-01 00:00:00",
+                "dateFin": "2020-01-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GELEE",
+                "dateDebut": "1960-01-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "1962-09-01 00:00:00",
+                "dateFin": "1965-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "1971-04-01 00:00:00",
+                "dateFin": "1971-04-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "1976-05-01 00:00:00",
+                "dateFin": "1976-05-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "1979-02-01 00:00:00",
+                "dateFin": "1979-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "1993-04-01 00:00:00",
+                "dateFin": "1993-04-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "1999-07-01 00:00:00",
+                "dateFin": "1999-07-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "2001-07-01 00:00:00",
+                "dateFin": "2001-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "2004-01-01 00:00:00",
+                "dateFin": "2005-04-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "2007-03-01 00:00:00",
+                "dateFin": "2011-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "2013-03-01 00:00:00",
+                "dateFin": "2015-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC GRELE",
+                "dateDebut": "2017-03-01 00:00:00",
+                "dateFin": "2019-11-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1950-12-01 00:00:00",
+                "dateFin": "1951-01-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1953-01-01 00:00:00",
+                "dateFin": "1953-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1955-01-01 00:00:00",
+                "dateFin": "1956-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1958-01-01 00:00:00",
+                "dateFin": "1958-04-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1960-01-01 00:00:00",
+                "dateFin": "1972-01-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1973-12-01 00:00:00",
+                "dateFin": "1979-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1980-11-01 00:00:00",
+                "dateFin": "1989-04-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1991-02-01 00:00:00",
+                "dateFin": "1991-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1994-02-01 00:00:00",
+                "dateFin": "1994-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "1995-12-01 00:00:00",
+                "dateFin": "1999-03-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "2001-02-01 00:00:00",
+                "dateFin": "2001-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "2003-01-01 00:00:00",
+                "dateFin": "2007-03-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "2009-01-01 00:00:00",
+                "dateFin": "2013-03-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "2015-02-01 00:00:00",
+                "dateFin": "2015-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "2017-11-01 00:00:00",
+                "dateFin": "2018-03-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC NEIGE",
+                "dateDebut": "2020-02-01 00:00:00",
+                "dateFin": "2020-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=1 MM",
+                "dateDebut": "1948-04-01 00:00:00",
+                "dateFin": "1948-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=1 MM",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "1951-08-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=1 MM",
+                "dateDebut": "1953-01-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=10 MM",
+                "dateDebut": "1948-04-01 00:00:00",
+                "dateFin": "1948-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=10 MM",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "1951-08-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=10 MM",
+                "dateDebut": "1953-01-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=100 MM",
+                "dateDebut": "1948-04-01 00:00:00",
+                "dateFin": "1948-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=100 MM",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "1951-08-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=100 MM",
+                "dateDebut": "1953-01-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=30 MM",
+                "dateDebut": "1948-04-01 00:00:00",
+                "dateFin": "1948-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=30 MM",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "1951-08-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=30 MM",
+                "dateDebut": "1953-01-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=5 MM",
+                "dateDebut": "1948-04-01 00:00:00",
+                "dateFin": "1948-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=5 MM",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "1951-08-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=5 MM",
+                "dateDebut": "1953-01-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=50 MM",
+                "dateDebut": "1948-04-01 00:00:00",
+                "dateFin": "1948-10-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=50 MM",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "1951-08-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC RR>=50 MM",
+                "dateDebut": "1953-01-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC SOL COUVERT DE NEIGE",
+                "dateDebut": "2004-10-01 00:00:00",
+                "dateFin": "2006-03-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+10\u00b0C",
+                "dateDebut": "1960-01-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+10\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+10\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+15\u00b0C",
+                "dateDebut": "1960-01-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+15\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+15\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+20\u00b0C",
+                "dateDebut": "1960-01-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+20\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=+20\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-10\u00b0C",
+                "dateDebut": "1960-01-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-10\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-10\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-5\u00b0C",
+                "dateDebut": "1960-01-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-5\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN<=-5\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+20\u00b0C",
+                "dateDebut": "1960-01-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+20\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+20\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+25\u00b0C",
+                "dateDebut": "1960-01-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+25\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TN>=+25\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=0\u00b0C",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=0\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=0\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=20\u00b0C",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=20\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=20\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=27\u00b0C",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=27\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX<=27\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=25\u00b0C",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=25\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=25\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=30\u00b0C",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=30\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=30\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=32\u00b0C",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=32\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=32\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=35\u00b0C",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=35\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=35\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "1963-09-01 00:00:00"
+            },
+            {
+                "nom": "NOMBRE DE JOURS AVEC TX>=35\u00b0C",
+                "dateDebut": "1963-11-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE D'ORAGE QUOTIDIENNE",
+                "dateDebut": "1961-01-02 00:00:00",
+                "dateFin": "1984-12-31 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE D'ORAGE QUOTIDIENNE",
+                "dateDebut": "1987-01-01 00:00:00",
+                "dateFin": "2018-04-03 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE D'ORAGE QUOTIDIENNE",
+                "dateDebut": "2019-10-14 00:00:00",
+                "dateFin": "2020-01-28 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE BROUILLARD QUOTIDIENNE",
+                "dateDebut": "1961-01-02 00:00:00",
+                "dateFin": "1984-12-31 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE BROUILLARD QUOTIDIENNE",
+                "dateDebut": "1987-01-01 00:00:00",
+                "dateFin": "2019-11-24 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE GRELE QUOTIDIENNE",
+                "dateDebut": "1961-01-02 00:00:00",
+                "dateFin": "1984-12-31 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE GRELE QUOTIDIENNE",
+                "dateDebut": "1987-01-01 00:00:00",
+                "dateFin": "2005-04-15 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE GRELE QUOTIDIENNE",
+                "dateDebut": "2007-03-20 00:00:00",
+                "dateFin": "2011-02-26 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE GRELE QUOTIDIENNE",
+                "dateDebut": "2013-03-16 00:00:00",
+                "dateFin": "2015-02-24 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE GRELE QUOTIDIENNE",
+                "dateDebut": "2017-03-23 00:00:00",
+                "dateFin": "2019-11-13 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1950-12-05 00:00:00",
+                "dateFin": "1951-01-30 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1953-01-05 00:00:00",
+                "dateFin": "1953-02-12 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1955-01-03 00:00:00",
+                "dateFin": "1956-02-18 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1958-01-21 00:00:00",
+                "dateFin": "1958-04-11 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1960-01-11 00:00:00",
+                "dateFin": "1972-01-30 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1973-12-01 00:00:00",
+                "dateFin": "1991-02-17 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "1993-12-19 00:00:00",
+                "dateFin": "2007-03-19 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "2009-01-24 00:00:00",
+                "dateFin": "2013-03-29 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "2015-02-03 00:00:00",
+                "dateFin": "2015-02-03 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "2017-11-25 00:00:00",
+                "dateFin": "2018-03-03 00:00:00"
+            },
+            {
+                "nom": "OCCURRENCE DE NEIGE QUOTIDIENNE",
+                "dateDebut": "2020-02-13 00:00:00",
+                "dateFin": "2020-02-13 00:00:00"
+            },
+            {
+                "nom": "PRECIPITATION MAXIMALE EN 24H",
+                "dateDebut": "1948-04-01 00:00:00",
+                "dateFin": "1948-10-01 00:00:00"
+            },
+            {
+                "nom": "PRECIPITATION MAXIMALE EN 24H",
+                "dateDebut": "1949-04-01 00:00:00",
+                "dateFin": "1951-08-01 00:00:00"
+            },
+            {
+                "nom": "PRECIPITATION MAXIMALE EN 24H",
+                "dateDebut": "1953-01-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1953-06-01 00:00:00",
+                "dateFin": "1953-06-30 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1957-04-01 00:00:00",
+                "dateFin": "1957-04-30 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1958-04-21 00:00:00",
+                "dateFin": "1958-04-23 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1959-05-01 00:00:00",
+                "dateFin": "1959-05-31 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1961-01-29 00:00:00",
+                "dateFin": "1961-02-03 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1961-09-14 00:00:00",
+                "dateFin": "1961-09-29 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1961-12-10 00:00:00",
+                "dateFin": "1961-12-10 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1962-03-30 00:00:00",
+                "dateFin": "1962-04-09 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1963-02-10 00:00:00",
+                "dateFin": "1963-02-18 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1963-11-01 00:00:00",
+                "dateFin": "1963-11-25 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1964-02-18 00:00:00",
+                "dateFin": "1964-02-18 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1964-05-04 00:00:00",
+                "dateFin": "1964-05-04 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1965-01-17 00:00:00",
+                "dateFin": "1965-01-18 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1965-06-07 00:00:00",
+                "dateFin": "1965-06-07 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1965-11-18 00:00:00",
+                "dateFin": "1966-02-10 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1966-11-08 00:00:00",
+                "dateFin": "1966-11-08 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1967-12-21 00:00:00",
+                "dateFin": "1967-12-21 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1968-10-13 00:00:00",
+                "dateFin": "1968-10-13 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1968-12-24 00:00:00",
+                "dateFin": "1968-12-24 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1969-11-13 00:00:00",
+                "dateFin": "1970-01-18 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1971-09-28 00:00:00",
+                "dateFin": "1971-12-21 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1977-11-01 00:00:00",
+                "dateFin": "1977-11-01 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1979-02-10 00:00:00",
+                "dateFin": "1979-02-11 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1979-10-10 00:00:00",
+                "dateFin": "1979-11-17 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1980-10-26 00:00:00",
+                "dateFin": "1980-10-26 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1981-10-04 00:00:00",
+                "dateFin": "1981-10-14 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1982-09-24 00:00:00",
+                "dateFin": "1982-09-24 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1983-04-03 00:00:00",
+                "dateFin": "1983-04-27 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1984-01-15 00:00:00",
+                "dateFin": "1984-01-23 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1984-09-23 00:00:00",
+                "dateFin": "1984-12-15 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1985-05-03 00:00:00",
+                "dateFin": "1985-05-26 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1985-08-14 00:00:00",
+                "dateFin": "1985-08-14 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1985-11-09 00:00:00",
+                "dateFin": "1986-03-05 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1986-05-19 00:00:00",
+                "dateFin": "1986-05-19 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1986-09-15 00:00:00",
+                "dateFin": "1986-09-15 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1986-12-07 00:00:00",
+                "dateFin": "1987-02-07 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1988-01-10 00:00:00",
+                "dateFin": "1988-02-08 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1989-01-15 00:00:00",
+                "dateFin": "1989-04-26 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1989-10-26 00:00:00",
+                "dateFin": "1989-12-16 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1990-03-08 00:00:00",
+                "dateFin": "1990-03-09 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1990-07-03 00:00:00",
+                "dateFin": "1990-07-04 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1990-09-29 00:00:00",
+                "dateFin": "1990-09-30 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1990-12-27 00:00:00",
+                "dateFin": "1991-02-22 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1991-06-12 00:00:00",
+                "dateFin": "1991-06-13 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1992-02-26 00:00:00",
+                "dateFin": "1992-02-28 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1992-09-16 00:00:00",
+                "dateFin": "1992-09-17 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1992-12-05 00:00:00",
+                "dateFin": "1993-01-13 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1993-09-30 00:00:00",
+                "dateFin": "1993-09-30 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1993-12-19 00:00:00",
+                "dateFin": "1993-12-27 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1994-07-02 00:00:00",
+                "dateFin": "1995-02-14 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1995-05-11 00:00:00",
+                "dateFin": "1995-05-27 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1995-09-10 00:00:00",
+                "dateFin": "1995-10-04 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1996-03-26 00:00:00",
+                "dateFin": "1996-04-23 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1996-12-24 00:00:00",
+                "dateFin": "1997-02-03 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1998-01-02 00:00:00",
+                "dateFin": "1998-02-21 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1998-09-23 00:00:00",
+                "dateFin": "1999-04-20 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "1999-10-18 00:00:00",
+                "dateFin": "1999-12-14 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2000-02-29 00:00:00",
+                "dateFin": "2000-02-29 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2000-08-03 00:00:00",
+                "dateFin": "2001-03-22 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2001-10-01 00:00:00",
+                "dateFin": "2001-10-21 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2002-02-06 00:00:00",
+                "dateFin": "2002-03-18 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2002-08-02 00:00:00",
+                "dateFin": "2002-08-02 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2002-12-10 00:00:00",
+                "dateFin": "2003-02-09 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2003-06-14 00:00:00",
+                "dateFin": "2003-07-16 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2003-10-02 00:00:00",
+                "dateFin": "2003-10-02 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2003-12-29 00:00:00",
+                "dateFin": "2004-05-04 00:00:00"
+            },
+            {
+                "nom": "QUANTITE PRECIP BRUTE",
+                "dateDebut": "2004-10-01 00:00:00",
+                "dateFin": "2020-12-31 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 0\u00b0C",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 0\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 0\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 10\u00b0C",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 10\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 10\u00b0C",
+                "dateDebut": "1963-01-01 00:00:00",
+                "dateFin": "1963-11-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 10\u00b0C",
+                "dateDebut": "1964-02-01 00:00:00",
+                "dateFin": "1972-12-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 10\u00b0C",
+                "dateDebut": "1973-03-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 6\u00b0C",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 6\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 6\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 8\u00b0C",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 8\u00b0C",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "SOMME DES TNTXM QUOTIDIEN SUP A 8\u00b0C",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "TEMPERATURE MAXIMALE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-29 00:00:00"
+            },
+            {
+                "nom": "TEMPERATURE MAXIMALE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "2020-12-31 00:00:00"
+            },
+            {
+                "nom": "TEMPERATURE MINIMALE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "1960-01-01 00:00:00",
+                "dateFin": "1960-02-29 00:00:00"
+            },
+            {
+                "nom": "TEMPERATURE MINIMALE SOUS ABRI QUOTIDIENNE",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "2020-12-31 00:00:00"
+            },
+            {
+                "nom": "TN MINI DU MOIS",
+                "dateDebut": "1960-01-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "TN MINI DU MOIS",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "TN MINI DU MOIS",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            },
+            {
+                "nom": "TX MAXI DU MOIS",
+                "dateDebut": "1960-02-01 00:00:00",
+                "dateFin": "1960-02-01 00:00:00"
+            },
+            {
+                "nom": "TX MAXI DU MOIS",
+                "dateDebut": "1961-01-01 00:00:00",
+                "dateFin": "1962-09-01 00:00:00"
+            },
+            {
+                "nom": "TX MAXI DU MOIS",
+                "dateDebut": "1962-12-01 00:00:00",
+                "dateFin": "2020-12-01 00:00:00"
+            }
+        ],
+        "producteurs": [
+            {
+                "nom": "METEO-FRANCE",
+                "dateDebut": "1939-01-01 00:00:00",
+                "dateFin": "2020-12-31 00:00:00"
+            }
+        ],
+        "positions": [
+            {
+                "altitude": 20,
+                "latitude": 47.161833333333334,
+                "longitude": -1.3846666666666667,
+                "dateDebut": "1939-01-01 00:00:00",
+                "dateFin": "2020-12-31 00:00:00"
+            }
+        ]
+    }
+]
