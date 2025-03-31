@@ -1,19 +1,17 @@
+import logging
+from functools import cache
+from time import sleep
+from typing import Any, Optional
+
+import numba  # type: ignore
 import numpy as np
 import pandas as pd
 import requests
-import numba  # type: ignore
-from functools import cache
-import logging
-from typing import Any, Optional
-from time import sleep
 
 # ref: https://portail-api.meteofrance.fr/web/fr/api/test/a5935def-80ae-4e7e-83bc-3ef622f0438d/fe8c79d6-dcae-46f7-9e1f-6d5a8be4c3b8
 
 # courtesy : https://portail-api.meteofrance.fr/web/fr/faq
 # Example of a Python implementation for a continuous authentication client.
-# It's necessary to :
-# - update APPLICATION_ID
-# - update request_url at the end of the script
 
 # unique application id : you can find this in the curl's command to generate jwt token
 APPLICATION_ID = (
@@ -23,20 +21,46 @@ APPLICATION_ID = (
 # url to obtain acces token
 TOKEN_URL = "https://portail-api.meteofrance.fr/token"
 
+# list of french departement
 list_dep = [str(i) for i in range(1, 96)]
 list_dep.extend(
-    ["971", "972", "973", "974", "975", "984", "985", "986", "987", "988", "99"]
+    [
+        "971",
+        "972",
+        "973",
+        "974",
+        "975",
+        "984",
+        "985",
+        "986",
+        "987",
+        "988",
+        "99",
+    ]
 )
+
+# end point API url
 url_api = "https://public-api.meteofrance.fr/public/DPClim/v1"
 
 logger = logging.getLogger("meteofr")
 
 
-class Client(object):
+class Client:
+    """Client class to interact with the API."""
+
     def __init__(self):
         self.session = requests.Session()
 
-    def request(self, method, url, **kwargs):
+    def request(self, method: str, url: str, **kwargs) -> requests.Response:
+        """_summary_
+
+        Args:
+            method (str): http request verb (here: "GET")
+            url (str): API end point
+
+        Returns:
+            requests.Response: result of request
+        """
         # First request will always need to obtain a token first
         if "Authorization" not in self.session.headers:
             self.obtain_token()
@@ -51,13 +75,20 @@ class Client(object):
 
         return response
 
-    def token_has_expired(self, response):
+    def token_has_expired(self, response: requests.Response) -> bool:
+        """Method to check validity of token.
+
+        Args:
+            response (requests.Response): API response.
+
+        Returns:
+            bool: True / False answer.
+        """
         status = response.status_code
         content_type = response.headers["Content-Type"]
         repJson = response.text
         if status == 401 and "application/json" in content_type:
-            repJson = response.text
-            if "Invalid JWT token" in repJson["description"]:
+            if "Invalid JWT token" in repJson["description"]:  # type: ignore
                 return True
         return False
 
@@ -69,7 +100,7 @@ class Client(object):
             TOKEN_URL,
             data=data,
             allow_redirects=False,
-            headers=headers,  # , verify=False,
+            headers=headers,
         )
         token = access_token_response.json()["access_token"]
         # Update session with fresh token
@@ -80,18 +111,18 @@ def get_rqt(request_url: str, format_result: str = "json", error: str = "raise")
     """Base function to request API
 
     Args:
-        request_url (str): _description_
+        request_url (str): API end point.
         format_result (str, optional): either ('pd' for pandas.DataFrame, 'json', 'csv' or 'raw'). Defaults to "json".
-        error (str, optional): _description_. Defaults to "raise".
+        error (str, optional): how to handle errors. Defaults to "raise".
 
     Raises:
-        ValueError: _description_
+        ValueError: raise a value error if  response.status_code not in [200, 300[
 
     Returns:
-        Any: _description_
+        Any: depending on format_result returns a pd.DataFrame, a dict or a requests.Response object.
     """
-    from json import loads
     from io import StringIO
+    from json import loads
 
     client = Client()
     client.session.headers.update({"Accept": "application/json"})
@@ -139,7 +170,6 @@ def get_ref(dep: str, prm: str) -> pd.DataFrame:
         pd.DataFrame: result dataframe
     """
 
-    # logger.debug(f"begin get ref: {dep}, {prm}")
     request_url = (
         f"{url_api}/liste-stations/quotidienne?id-departement={dep}&parametre={prm}"
     )
@@ -147,13 +177,21 @@ def get_ref(dep: str, prm: str) -> pd.DataFrame:
     return get_rqt(request_url=request_url, format_result="pd")
 
 
-# @cache
-# def get_all_ref(*list_dep: str) -> pd.DataFrame: ## cache nécessite des args bytable (non list)
 def get_all_ref(list_dep: list[str] = list_dep, use_cache: bool = True) -> pd.DataFrame:
-    from pathlib import Path
+    """To iterate over all departements to fetch station information.
+
+    Args:
+        list_dep (list[str], optional): list of french departement. Defaults to list_dep.
+        use_cache (bool, optional): to avoid redownloading files if not needed. Defaults to True.
+
+    Returns:
+        pd.DataFrame: data framing the required stations list.
+    """
     from os import makedirs, path
-    from tqdm import tqdm
+    from pathlib import Path
     from time import sleep
+
+    from tqdm import tqdm
 
     logger.debug("begin get all ref")
     dir_cache = Path.home().joinpath(".meteofr")
@@ -190,7 +228,17 @@ def get_all_ref(list_dep: list[str] = list_dep, use_cache: bool = True) -> pd.Da
 
 @numba.jit
 def hvs(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-    """Haversine for distance computation."""
+    """Haversine for distance computation based on latitude and longitude points.
+
+    Args:
+        lat1 (float): latitude of 1st point
+        lon1 (float): longitude of 2nd point
+        lat2 (float): latitude of 1st point
+        lon2 (float): longitude of 2nd point
+
+    Returns:
+        float: haversine distance between 2 points (in km)
+    """
 
     lon1, lat1, lon2, lat2 = map(np.radians, [lon1, lat1, lon2, lat2])
     dlon = lon2 - lon1
@@ -204,7 +252,15 @@ def hvs(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
 
 @numba.jit
 def get_dist(vec: np.ndarray, ref: np.ndarray) -> np.ndarray:
-    """Find haversine distance matrix."""
+    """Find haversine distance matrix between 2 arrays
+
+    Args:
+        vec (np.ndarray): array (possibly 1d)
+        ref (np.ndarray): array (possibly 1d)
+
+    Returns:
+        np.ndarray: array of haversine distance (in km)
+    """
     n = vec.shape[0]
     m = ref.shape[0]
     res = np.zeros(shape=(n, m))
@@ -217,56 +273,40 @@ def get_dist(vec: np.ndarray, ref: np.ndarray) -> np.ndarray:
     return res
 
 
-def get_closest_n_point(
-    vec: np.ndarray, ref: np.ndarray, n: int = 5
-) -> np.ndarray:  # tuple[np.ndarray, np.ndarray]
-    """Get closest station from point.
+def get_closest_n_point(vec: np.ndarray, ref: np.ndarray, n: int = 5) -> np.ndarray:
+    """Get the 5 closest station from a given point
 
     Args:
-        vec (np.ndarray): _description_
-        ref (np.ndarray): _description_
+        vec (np.ndarray): array
+        ref (np.ndarray): array
 
     Returns:
-        tuple[np.ndarray, np.ndarray]: _description_
+        np.ndarray: array of the index of the top 5 closest points
     """
     mat = get_dist(vec, ref)
 
-    # return mat.argmin(axis=1), mat.min(axis=1)
-    # ii = np.argsort(mat, axis=1)[:,:5]
-    # mat[ii[0:5,:]]
-    # ii.ravel()
-    # mat[:,ii.ravel()]
-    # mat[:,]
-    # np.sort(mat, axis=1)[:5]
     return np.argsort(mat, axis=1)[:, :5]
 
 
 def get_weather_point(
     dates: list[str],
-    point: Optional[tuple[float, float]] = None,
-    id: Optional[str] = None,
-    name: Optional[str] = None,
+    point: tuple[float, float],
     df_ref_geo: Optional[pd.DataFrame] = None,
     dest_dir: Optional[str] = "data",
-):
+) -> tuple[pd.DataFrame, str]:
     """To fetch weather data per date and position.
 
     Args:
-        dates (list[str, str]): _description_
-        point (_type_, optional): _description_. Defaults to None.
-        id (_type_, optional): _description_. Defaults to None.
-        name (_type_, optional): _description_. Defaults to None.
+        dates (list[str]): dates [start, end] for request.
+        point (tuple[float, float]): coordinates latitude and longitude
+        df_ref_geo (Optional[pd.DataFrame], optional): dataframe of weather station coordinate. Defaults to None (fetch or load from source).
+        dest_dir (Optional[str], optional): path to directory to store data. Defaults to "data".
 
-    Raises:
-        NotImplementedError: _description_
+    Returns:
+        tuple[pd.DataFrame, str]: returns result (df, station_id) for given point.
     """
-    from os import makedirs, path
     from json import dumps
-    # from pathlib import Path
-
-    assert not all([point is None, id is None, name is None]), (
-        "1 parameter point, id or name must be given"
-    )
+    from os import makedirs, path
 
     if dest_dir is not None:
         makedirs(dest_dir, exist_ok=True)
@@ -282,15 +322,11 @@ def get_weather_point(
     # De plus, la disponibilité des données est occasionnelle
     df_ref_geo = df_ref_geo.loc[df_ref_geo.typePoste != 5]
 
-    # find the closest
-    if id or name:
-        raise NotImplementedError
-    elif point is not None:
-        # idx, d = get_closest_n_point(
-        idx = get_closest_n_point(
-            vec=np.asarray([point], dtype=(np.float64, np.float64)),
-            ref=df_ref_geo[["lat", "lon"]].to_numpy(dtype=(np.float64, np.float64)),
-        )
+    # find the closest station from point
+    idx = get_closest_n_point(
+        vec=np.asarray([point], dtype=(np.float64, np.float64)),
+        ref=df_ref_geo[["lat", "lon"]].to_numpy(dtype=(np.float64, np.float64)),
+    )
 
     # --- Find closest & ACTIVE station
     list_station_id = df_ref_geo.iloc[idx.ravel()]["id"].values.tolist()
@@ -313,14 +349,14 @@ def get_weather_point(
             break
         elif start > dates[0]:
             logger.info(
-                f"data insufficient for station_id: {station_id}, start: {start} > {dates[0]}"
+                f"insufficient data for station_id: {station_id}, start: {start} > {dates[0]}"
             )
         elif end < dates[-1]:
             logger.info(
-                f"data insufficient for station_id: {station_id}, end: {end} < {dates[-1]}"
+                f"insufficient data for station_id: {station_id}, end: {end} < {dates[-1]}"
             )
         else:
-            logger.info(f"data insufficient for station_id: {station_id}")
+            logger.info(f"insufficient data for station_id: {station_id}")
         sleep(2)
 
     # get weather data from closest station
@@ -332,41 +368,41 @@ def get_weather_point(
     id_cmde = id_rqt["elaboreProduitAvecDemandeResponse"]["return"]
     url_rqt = f"https://public-api.meteofrance.fr/public/DPClim/v1/commande/fichier?id-cmde={id_cmde}"
 
-    doc = get_rqt(request_url=url_rqt, error="warn", format_result="csv")
+    df = get_rqt(request_url=url_rqt, error="warn", format_result="csv")
 
-    return doc, station_id
+    return df, station_id
 
 
 def get_weather(
     dates: list[str] | pd.DatetimeIndex,
     point: tuple[float, float],
-    dest_dir="data",
+    dest_dir: str = "data",
+    dest_file: Optional[str] = None,
     logger_name: str = "meteofr",
     list_dep: list[str] = list_dep,
 ) -> pd.DataFrame:
-    """_summary_
+    """User function for downloading data.
 
     Args:
-        dates (list[str] | pd.DatetimeIndex): _description_
-        point (tuple[float, float]): _description_
-        dest_dir (str, optional): _description_. Defaults to "data".
-        logger_name (str, optional): _description_. Defaults to "meteofr".
-        list_dep (list[str], optional): _description_. Defaults to list_dep.
-
-    Raises:
-        TypeError: _description_
+        dates (list[str] | pd.DatetimeIndex): [start, end] dates for request.
+        point (tuple[float, float]): coordinate (latitude, longitude) of point.
+        dest_dir (str, optional): path to directory to save data. Defaults to "data".
+        dest_file (str, optional): name of the file to save data. Defaults to None.
+        logger_name (str, optional): logger name. Defaults to "meteofr".
+        list_dep (list[str], optional): list of french departement to get data from. Defaults to list_dep.
 
     Returns:
-        pd.DataFrame: _description_
+        pd.DataFrame: result dataframe
     """
     from itertools import pairwise
-    from time import sleep
-    from tqdm import tqdm
     from os import makedirs, path
+    from time import sleep
+
+    from tqdm import tqdm
 
     # donner un site/coord/... + temporalité et récupérer les infos requises
     logger = logging.getLogger(logger_name)
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.INFO)
     ch = logging.StreamHandler()
     formatter = logging.Formatter(
         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
@@ -374,15 +410,17 @@ def get_weather(
     ch.setFormatter(formatter)
     logger.addHandler(ch)
 
-    logger.info("Howdy !")
+    logger.debug("Howdy !")
 
-    if isinstance(dates, pd.DatetimeIndex):
-        time_fmt = "%Y-%m-%dT%H:%M:%SZ"
-        dates_ = [i.strftime(time_fmt) for i in dates]
-    elif isinstance(dates[0], str):
-        dates_ = dates
-    else:
-        raise TypeError
+    # --- 1 year max historical request
+    dates_dti: pd.DatetimeIndex = pd.DatetimeIndex(dates)
+    if (dates_dti[1] - dates_dti[0]).days > 365:
+        dates_dti = pd.date_range(start=dates[0], end=dates[1], freq="YE").append(
+            dates_dti[[1]]
+        )
+
+    time_fmt = "%Y-%m-%dT%H:%M:%SZ"
+    dates_ = [i.strftime(time_fmt) for i in dates_dti]
 
     df_ref_geo = get_all_ref(list_dep=list_dep)  # , use_cache=False
 
@@ -397,31 +435,31 @@ def get_weather(
         sleep(2)
 
     makedirs(dest_dir, exist_ok=True)
+    dest_file_: str = (
+        f"df_res_{station_id}_{'_'.join(dates_dti.strftime('%Y%m%d'))}.csv"
+        if dest_file is None
+        else str(dest_file)
+    )
     df = pd.concat(res)
 
-    df.to_csv(path.join(dest_dir, f"df_res_{station_id}.csv"), index=False)
+    df.to_csv(
+        path.join(
+            dest_dir,
+            dest_file_,
+        ),
+        index=False,
+    )
 
     return df
 
 
 if __name__ == "__main__":
-    # --- test simple
+    # --- simple test
     # test_point = (45.932050, 2.000847)
     test_point = (47.218102, -1.552800)
 
-    # dates = [start.strftime(time_fmt), td.strftime(time_fmt)]
-    # get_weather(dates=dates, point=test_point)
-
-    # dates = pd.DatetimeIndex([td - pd.Timedelta("370d"), td])  # 1 an max
     td = pd.Timestamp("today", tz="Europe/Paris").normalize().tz_convert("UTC")
     dates = pd.DatetimeIndex([td - pd.Timedelta("30d"), td])  # 1 an max
-    if (dates[1] - dates[0]).days > 365:
-        dates = pd.date_range(start=dates[0], end=dates[1], freq="YE").append(
-            dates[[1]]
-        )
 
     df = get_weather(dates=dates, point=test_point)
-
-    ""
-
-    # TODO : se baser sur station la plus proche AVEC données publique (ou encore d'actualité...)
+    print(f"df shape: {df.shape}")
