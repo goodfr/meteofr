@@ -459,7 +459,7 @@ if __name__ == "__main__":
     test_point = (47.218102, -1.552800)
 
     td = pd.Timestamp("today", tz="Europe/Paris").normalize().tz_convert("UTC")
-    dates = pd.DatetimeIndex([td - pd.Timedelta("30d"), td])  # 1 an max
+    dates = pd.DatetimeIndex([td - pd.Timedelta("30d"), td])  # 1 year max
 
     df = get_weather(dates=dates, point=test_point)
     print(f"df shape: {df.shape}")
