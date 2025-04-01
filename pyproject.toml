@@ -24,7 +24,13 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = ["numba", "numpy", "pandas"]
+dependencies = [
+    "numba>=0.58.1",
+    "pandas>=2.0.3",
+    "pytest>=8.3.5",
+    "requests>=2.32.3",
+    "tqdm>=4.67.1",
+]
 
 [project.urls]
 Documentation = "https://github.com/goodfr/meteofr#readme"
