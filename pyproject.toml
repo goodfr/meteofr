@@ -25,11 +25,11 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dependencies = [
-    "numba>=0.58.1",
-    "pandas>=2.0.3",
-    "pytest>=8.3.5",
-    "requests>=2.32.3",
-    "tqdm>=4.67.1",
+  "numba>=0.58.1",
+  "pandas>=2.0.3",
+  "pytest>=8.3.5",
+  "requests>=2.32.3",
+  "tqdm>=4.67.1",
 ]
 
 [project.urls]
@@ -60,3 +60,10 @@ exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]
 
 [tool.pytest.ini_options]
 markers = ["pip"]
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+publish-url = "https://test.pypi.org/legacy/"
+explicit = true
+username = "__token__"
