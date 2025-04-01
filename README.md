@@ -5,7 +5,7 @@
 
 -----
 
-Tool to fetch weather data from Meteo France API based on latitude and longitude and longitude coordinates.
+Tool to fetch weather data from Meteo France API based on latitude and longitude coordinates.
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ pip install meteofr
 
 ## Quickstart
 
-A first download of the list of weather stations is required to compute closest active station from given point.
+A first download of the list of weather stations is required to compute closest active at the time station from given point.
 
 ```python
 from src.meteofr.get_data import get_weather

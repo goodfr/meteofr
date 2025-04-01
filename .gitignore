@@ -1,4 +1,7 @@
 data
+uv.lock
+requirements.txt
+dev_history.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
