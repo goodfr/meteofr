@@ -25,6 +25,7 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dependencies = [
+  "joblib>=1.4.2",
   "numba>=0.58.1",
   "pandas>=2.0.3",
   "pytest>=8.3.5",

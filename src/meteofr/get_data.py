@@ -42,7 +42,7 @@ list_dep.extend(
 # end point API url
 url_api = "https://public-api.meteofrance.fr/public/DPClim/v1"
 
-logger = logging.getLogger("meteofr")
+logger = logging.getLogger(name=__file__)
 
 
 class Client:
@@ -93,6 +93,7 @@ class Client:
         return False
 
     def obtain_token(self):
+        """Obtain a token based on (web) client credentials"""
         # Obtain new token
         data = {"grant_type": "client_credentials"}
         headers = {"Authorization": "Basic " + APPLICATION_ID}
@@ -207,7 +208,15 @@ def get_all_ref(list_dep: list[str] = list_dep, use_cache: bool = True) -> pd.Da
         else:
             list_dep = [i for i in list_dep if i not in df_ref_geo.dep.unique()]
             logger.info(f"update list_dep: {list_dep}")
+    else:
+        if use_cache is False:
+            logger.info("use cache is False, fetching data")
+        elif path.exists(cache_file) is False:
+            logger.info("cache data non existent, fetching data")
+        else:
+            raise
 
+    # if no use of cache data
     df_list: list = []
     for i in tqdm(list_dep):
         df_ref_geo = get_ref(dep=i, prm="temperature")
@@ -279,13 +288,14 @@ def get_closest_n_point(vec: np.ndarray, ref: np.ndarray, n: int = 5) -> np.ndar
     Args:
         vec (np.ndarray): array
         ref (np.ndarray): array
+        n (int):number of closest point index to return
 
     Returns:
         np.ndarray: array of the index of the top 5 closest points
     """
     mat = get_dist(vec, ref)
 
-    return np.argsort(mat, axis=1)[:, :5]
+    return np.argsort(mat, axis=1)[:, :n]
 
 
 def get_weather_point(
@@ -293,6 +303,7 @@ def get_weather_point(
     point: tuple[float, float],
     df_ref_geo: Optional[pd.DataFrame] = None,
     dest_dir: Optional[str] = "data",
+    n: int = 20,
 ) -> tuple[pd.DataFrame, str]:
     """To fetch weather data per date and position.
 
@@ -301,6 +312,7 @@ def get_weather_point(
         point (tuple[float, float]): coordinates latitude and longitude
         df_ref_geo (Optional[pd.DataFrame], optional): dataframe of weather station coordinate. Defaults to None (fetch or load from source).
         dest_dir (Optional[str], optional): path to directory to store data. Defaults to "data".
+        n (int, optional): number of closest points to consider. Defaults to 10.
 
     Returns:
         tuple[pd.DataFrame, str]: returns result (df, station_id) for given point.
@@ -326,6 +338,7 @@ def get_weather_point(
     idx = get_closest_n_point(
         vec=np.asarray([point], dtype=(np.float64, np.float64)),
         ref=df_ref_geo[["lat", "lon"]].to_numpy(dtype=(np.float64, np.float64)),
+        n=n,
     )
 
     # --- Find closest & ACTIVE station
@@ -376,10 +389,12 @@ def get_weather_point(
 def get_weather(
     dates: list[str] | pd.DatetimeIndex,
     point: tuple[float, float],
+    use_cache: bool = True,
     dest_dir: str = "data",
     dest_file: Optional[str] = None,
-    logger_name: str = "meteofr",
+    logger_name: str = __file__,
     list_dep: list[str] = list_dep,
+    verbose: bool = True,
 ) -> pd.DataFrame:
     """User function for downloading data.
 
@@ -388,7 +403,7 @@ def get_weather(
         point (tuple[float, float]): coordinate (latitude, longitude) of point.
         dest_dir (str, optional): path to directory to save data. Defaults to "data".
         dest_file (str, optional): name of the file to save data. Defaults to None.
-        logger_name (str, optional): logger name. Defaults to "meteofr".
+        logger_name (str, optional): logger name. Defaults to __file__.
         list_dep (list[str], optional): list of french departement to get data from. Defaults to list_dep.
 
     Returns:
@@ -400,17 +415,33 @@ def get_weather(
 
     from tqdm import tqdm
 
-    # donner un site/coord/... + temporalité et récupérer les infos requises
-    logger = logging.getLogger(logger_name)
-    logger.setLevel(logging.INFO)
-    ch = logging.StreamHandler()
-    formatter = logging.Formatter(
-        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-    )
-    ch.setFormatter(formatter)
-    logger.addHandler(ch)
+    # set up logger
+    logger = logging.getLogger(name=logger_name)
+    if verbose is True:
+        logger.setLevel(logging.INFO)
+        ch = logging.StreamHandler()
+        formatter = logging.Formatter(
+            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        )
+        ch.setFormatter(formatter)
+        logger.addHandler(ch)
 
-    logger.debug("Howdy !")
+        logger.debug("Howdy !")
+
+    from joblib import Memory  # type: ignore
+
+    cachedir = ".cache"
+    makedirs(cachedir, exist_ok=True)
+
+    abs_cache = path.abspath(cachedir)
+    path.join("\\\\?\\", abs_cache)
+    # as per https://github.com/joblib/joblib/issues/1496
+    # specify an extended-length path by adding the prefix \\?\
+    memory = Memory(location=r"\\?\\" + abs_cache, verbose=0)
+
+    @memory.cache
+    def _get_weather_point(*args, **kwargs):
+        return get_weather_point(*args, **kwargs)
 
     # --- 1 year max historical request
     dates_dti: pd.DatetimeIndex = pd.DatetimeIndex(dates)
@@ -422,17 +453,32 @@ def get_weather(
     time_fmt = "%Y-%m-%dT%H:%M:%SZ"
     dates_ = [i.strftime(time_fmt) for i in dates_dti]
 
-    df_ref_geo = get_all_ref(list_dep=list_dep)  # , use_cache=False
+    df_ref_geo = get_all_ref(list_dep=list_dep, use_cache=use_cache)
 
     res = []
-    for i, j in tqdm(pairwise(dates_)):
-        doc, station_id = get_weather_point(
-            dates=[i, j],
+    # --- iterate on dates slice (1 year max)
+    if len(dates_) > 2:
+        for i, j in tqdm(pairwise(dates_)):
+            doc, station_id = _get_weather_point(
+                dates=[i, j],
+                point=point,
+                df_ref_geo=df_ref_geo,
+            )
+            res.append(doc)
+            sleep(2)
+    elif len(dates_) == 2:
+        doc, station_id = _get_weather_point(
+            dates=dates_,
             point=point,
             df_ref_geo=df_ref_geo,
         )
+        if doc is None:
+            raise ValueError(f"No data for request point: {point} at dates: {dates_}")
         res.append(doc)
-        sleep(2)
+    else:
+        raise ValueError(f"dates must be len 2: {dates_}")
+
+    df = pd.concat(res)
 
     makedirs(dest_dir, exist_ok=True)
     dest_file_: str = (
@@ -440,15 +486,17 @@ def get_weather(
         if dest_file is None
         else str(dest_file)
     )
-    df = pd.concat(res)
 
-    df.to_csv(
-        path.join(
-            dest_dir,
-            dest_file_,
-        ),
-        index=False,
+    path_file = path.join(
+        dest_dir,
+        dest_file_,
     )
+
+    if not path.exists(path_file):
+        df.to_csv(
+            path_file,
+            index=False,
+        )
 
     return df
 
@@ -457,6 +505,7 @@ if __name__ == "__main__":
     # --- simple test
     # test_point = (45.932050, 2.000847)
     test_point = (47.218102, -1.552800)
+    # test_point = (50.7237, 2.88079) # hard station to find
 
     td = pd.Timestamp("today", tz="Europe/Paris").normalize().tz_convert("UTC")
     dates = pd.DatetimeIndex([td - pd.Timedelta("30d"), td])  # 1 year max
