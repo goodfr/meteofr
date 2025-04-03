@@ -1,12 +1,14 @@
 import logging
-from functools import cache
-from time import sleep
+
+# from functools import cache
+# from time import sleep
 from typing import Any, Optional
 
 import numba  # type: ignore
 import numpy as np
 import pandas as pd
 import requests
+from joblib import Memory  # type: ignore
 
 # ref: https://portail-api.meteofrance.fr/web/fr/api/test/a5935def-80ae-4e7e-83bc-3ef622f0438d/fe8c79d6-dcae-46f7-9e1f-6d5a8be4c3b8
 
@@ -108,7 +110,12 @@ class Client:
         self.session.headers.update({"Authorization": "Bearer %s" % token})
 
 
-def get_rqt(request_url: str, format_result: str = "json", error: str = "raise") -> Any:
+def get_rqt(
+    request_url: str,
+    format_result: str = "json",
+    error: str = "raise",
+    n_sleep: int = 0,
+) -> Any:
     """Base function to request API
 
     Args:
@@ -124,6 +131,7 @@ def get_rqt(request_url: str, format_result: str = "json", error: str = "raise")
     """
     from io import StringIO
     from json import loads
+    from time import sleep
 
     client = Client()
     client.session.headers.update({"Accept": "application/json"})
@@ -131,6 +139,8 @@ def get_rqt(request_url: str, format_result: str = "json", error: str = "raise")
         "GET",
         request_url,
     )
+
+    sleep(n_sleep)
 
     if response.status_code >= 200 and response.status_code < 300:
         pass
@@ -159,8 +169,7 @@ def get_rqt(request_url: str, format_result: str = "json", error: str = "raise")
         )
 
 
-@cache
-def get_ref(dep: str, prm: str) -> pd.DataFrame:
+def get_ref(dep: str, prm: str, n_sleep: int = 2) -> pd.DataFrame:
     """To get data from API into a DataFrame result
 
     Args:
@@ -175,7 +184,32 @@ def get_ref(dep: str, prm: str) -> pd.DataFrame:
         f"{url_api}/liste-stations/quotidienne?id-departement={dep}&parametre={prm}"
     )
 
-    return get_rqt(request_url=request_url, format_result="pd")
+    return get_rqt(request_url=request_url, format_result="pd", n_sleep=n_sleep)
+
+
+def setup_cache(cachedir: str = ".cache") -> Memory:
+    """To download things only once per request.
+
+    Delete .cache folder for data update.
+
+    Args:
+        cachedir (str, optional): path to folder where to store (pickled) data. Defaults to ".cache".
+
+    Returns:
+        Memory: memory object which handles fun(args) comparison to stored past requests
+    """
+    from os import makedirs, path
+
+    from joblib import Memory
+
+    makedirs(cachedir, exist_ok=True)
+    abs_cache = path.abspath(cachedir)
+    # as per https://github.com/joblib/joblib/issues/1496
+    # specify an extended-length path by adding the prefix \\?\
+    path.join("\\\\?\\", abs_cache)
+    memory = Memory(location=r"\\?\\" + abs_cache, verbose=0)
+
+    return memory
 
 
 def get_all_ref(list_dep: list[str] = list_dep, use_cache: bool = True) -> pd.DataFrame:
@@ -188,45 +222,21 @@ def get_all_ref(list_dep: list[str] = list_dep, use_cache: bool = True) -> pd.Da
     Returns:
         pd.DataFrame: data framing the required stations list.
     """
-    from os import makedirs, path
-    from pathlib import Path
-    from time import sleep
-
     from tqdm import tqdm
 
     logger.debug("begin get all ref")
-    dir_cache = Path.home().joinpath(".meteofr")
-    cache_file = path.join(dir_cache, "ref.csv")
-    makedirs(dir_cache, exist_ok=True)
 
-    if (path.exists(cache_file) is True) and (use_cache is True):
-        logger.info("Using cached data for ref.")
-        df_ref_geo = pd.read_csv(cache_file)
+    memory = setup_cache()
 
-        if list_dep[-1] in [str(i) for i in df_ref_geo.dep.unique()]:
-            return df_ref_geo
-        else:
-            list_dep = [i for i in list_dep if i not in df_ref_geo.dep.unique()]
-            logger.info(f"update list_dep: {list_dep}")
-    else:
-        if use_cache is False:
-            logger.info("use cache is False, fetching data")
-        elif path.exists(cache_file) is False:
-            logger.info("cache data non existent, fetching data")
-        else:
-            raise
+    @memory.cache
+    def _get_ref(dep: str, prm: str) -> pd.DataFrame:
+        return get_ref(dep, prm)
 
     # if no use of cache data
     df_list: list = []
     for i in tqdm(list_dep):
-        df_ref_geo = get_ref(dep=i, prm="temperature")
-        df_ref_geo["dep"] = i
-        if i == list_dep[0]:
-            df_ref_geo.to_csv(cache_file, index=False)
-        else:
-            df_ref_geo.to_csv(cache_file, index=False, header=False, mode="a")
+        df_ref_geo = _get_ref(dep=i, prm="temperature")
         df_list.append(df_ref_geo)
-        sleep(2)
 
     df_ref_geo = pd.concat(df_list).reset_index(drop=True)
 
@@ -317,8 +327,8 @@ def get_weather_point(
     Returns:
         tuple[pd.DataFrame, str]: returns result (df, station_id) for given point.
     """
-    from json import dumps
-    from os import makedirs, path
+    # from json import dumps
+    from os import makedirs
 
     if dest_dir is not None:
         makedirs(dest_dir, exist_ok=True)
@@ -347,14 +357,18 @@ def get_weather_point(
         f"{i:0>8}" for i in list_station_id
     ]  # padding avec des 0 pour être sur 8 chars
 
+    memory = setup_cache()
+
+    @memory.cache
+    def _get_rqt(*args, **kwargs):
+        return get_rqt(*args, **kwargs)
+
     # pour date de données dispo cf web service /information-station
     # metadonnées des variables disponibles pour la station
     for station_id in list_station_id:
         url_meta = f"https://public-api.meteofrance.fr/public/DPClim/v1/information-station?id-station={station_id}"
-        df_meta = get_rqt(url_meta, error="warn")
-        if dest_dir is not None:
-            with open(path.join(dest_dir, f"meta_{station_id}.json"), "w") as f:
-                f.write(dumps(df_meta, indent=4))
+        df_meta = _get_rqt(url_meta, error="warn", n_sleep=2)
+
         start, end = df_meta[0]["dateDebut"], df_meta[0]["dateFin"]
         end = end if end != "" else "9999-01-01 00:00:00"
         if start <= dates[0] and dates[-1] <= end:
@@ -370,7 +384,7 @@ def get_weather_point(
             )
         else:
             logger.info(f"insufficient data for station_id: {station_id}")
-        sleep(2)
+        # sleep(2)
 
     # get weather data from closest station
     url_point_weather = f"""https://public-api.meteofrance.fr/public/DPClim/v1/commande-station/quotidienne?id-station={station_id}&date-deb-periode={dates[0]}&date-fin-periode={dates[1]}"""
@@ -428,16 +442,7 @@ def get_weather(
 
         logger.debug("Howdy !")
 
-    from joblib import Memory  # type: ignore
-
-    cachedir = ".cache"
-    makedirs(cachedir, exist_ok=True)
-
-    abs_cache = path.abspath(cachedir)
-    path.join("\\\\?\\", abs_cache)
-    # as per https://github.com/joblib/joblib/issues/1496
-    # specify an extended-length path by adding the prefix \\?\
-    memory = Memory(location=r"\\?\\" + abs_cache, verbose=0)
+    memory = setup_cache()
 
     @memory.cache
     def _get_weather_point(*args, **kwargs):
