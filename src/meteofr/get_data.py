@@ -293,7 +293,7 @@ def get_dist(vec: np.ndarray, ref: np.ndarray) -> np.ndarray:
 
 
 def get_closest_n_point(vec: np.ndarray, ref: np.ndarray, n: int = 5) -> np.ndarray:
-    """Get the 5 closest station from a given point
+    """Get the n closest station from a given point
 
     Args:
         vec (np.ndarray): array
@@ -408,6 +408,7 @@ def get_weather(
     dest_file: Optional[str] = None,
     logger_name: str = __file__,
     list_dep: list[str] = list_dep,
+    n: int = 20,
     verbose: bool = True,
 ) -> pd.DataFrame:
     """User function for downloading data.
@@ -415,10 +416,17 @@ def get_weather(
     Args:
         dates (list[str] | pd.DatetimeIndex): [start, end] dates for request.
         point (tuple[float, float]): coordinate (latitude, longitude) of point.
+        use_cache (bool, optional): use cached data to speed up many requests. Defaults to True.
         dest_dir (str, optional): path to directory to save data. Defaults to "data".
         dest_file (str, optional): name of the file to save data. Defaults to None.
         logger_name (str, optional): logger name. Defaults to __file__.
         list_dep (list[str], optional): list of french departement to get data from. Defaults to list_dep.
+        n (int, optional): number of closest stations to look for compatible dates. Defaults to 20.
+        verbose (bool, optional): set up logger at INFO level. Defaults to True.
+
+    Raises:
+        ValueError: if no data returned par request based on dates and point
+        ValueError: if dates not in correct [start, end] string format
 
     Returns:
         pd.DataFrame: result dataframe
@@ -465,9 +473,7 @@ def get_weather(
     if len(dates_) > 2:
         for i, j in tqdm(pairwise(dates_)):
             doc, station_id = _get_weather_point(
-                dates=[i, j],
-                point=point,
-                df_ref_geo=df_ref_geo,
+                dates=[i, j], point=point, df_ref_geo=df_ref_geo, n=n
             )
             res.append(doc)
             sleep(2)
