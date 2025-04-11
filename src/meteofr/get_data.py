@@ -212,7 +212,31 @@ def setup_cache(cachedir: str = ".cache") -> Memory:
     return memory
 
 
-def get_all_ref(list_dep: list[str] = list_dep, use_cache: bool = True) -> pd.DataFrame:
+def _id(x: Any) -> Any:
+    return x
+
+
+def def_tqdm(x: bool = True) -> Any:
+    from os import listdir
+    from glob import glob
+
+    n_cached_files = len(
+        listdir(
+            glob(r".cache/joblib/meteofr/get_data/get_all_ref/%3Clocals%3E/_get_ref")[0]
+        )
+    )
+
+    if (x is True) and (n_cached_files < 106):
+        from tqdm import tqdm
+    else:
+        tqdm = _id  # type: ignore
+
+    return tqdm
+
+
+def get_all_ref(
+    list_dep: list[str] = list_dep, use_cache: bool = True, use_tqdm: bool = True
+) -> pd.DataFrame:
     """To iterate over all departements to fetch station information.
 
     Args:
@@ -222,7 +246,7 @@ def get_all_ref(list_dep: list[str] = list_dep, use_cache: bool = True) -> pd.Da
     Returns:
         pd.DataFrame: data framing the required stations list.
     """
-    from tqdm import tqdm
+    tqdm = def_tqdm(use_tqdm)
 
     logger.debug("begin get all ref")
 
@@ -327,8 +351,8 @@ def get_weather_point(
     Returns:
         tuple[pd.DataFrame, str]: returns result (df, station_id) for given point.
     """
-    # from json import dumps
     from os import makedirs
+    from time import sleep
 
     if dest_dir is not None:
         makedirs(dest_dir, exist_ok=True)
@@ -384,7 +408,7 @@ def get_weather_point(
             )
         else:
             logger.info(f"insufficient data for station_id: {station_id}")
-        # sleep(2)
+        sleep(2)
 
     # get weather data from closest station
     url_point_weather = f"""https://public-api.meteofrance.fr/public/DPClim/v1/commande-station/quotidienne?id-station={station_id}&date-deb-periode={dates[0]}&date-fin-periode={dates[1]}"""
@@ -409,6 +433,7 @@ def get_weather(
     logger_name: str = __file__,
     list_dep: list[str] = list_dep,
     n: int = 20,
+    use_tqdm: bool = True,
     verbose: bool = True,
 ) -> pd.DataFrame:
     """User function for downloading data.
@@ -435,7 +460,7 @@ def get_weather(
     from os import makedirs, path
     from time import sleep
 
-    from tqdm import tqdm
+    tqdm = def_tqdm(use_tqdm)
 
     # set up logger
     logger = logging.getLogger(name=logger_name)
